@@ -8,8 +8,8 @@
   * [`terra_pinyin.dict.yaml`](https://github.com/rime/rime-terra-pinyin)。
 * recommends:
   * [TRIME](https://github.com/osfans/trime)。
-  * [`"preset_keyboards/9key_terra_pinyin"`](#user-content-trime_keyboardsyaml)。
-  * `dictgen_9key_stroke.schema.yaml`（五筆畫反查）。
+  * `"preset_keyboards/9key_terra_pinyin"`（下記）。
+  * `dictgen_9key_stroke.schema.yaml`（五筆畫反查）（下記）。
 * 多用簡拼就會開始卡頓。
 
 ### `dictgen_9key_stroke` （9鍵反查用）五筆畫
