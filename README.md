@@ -14,7 +14,7 @@
 * 要 [`stroke.dict.yaml`](https://github.com/rime/rime-stroke)。
 
 ### `yytpiq_toneless` yytpiq_toneless
-* 私人用……都已經 upload 咗其他啲
+* 私人用……其他啲都已經 upload 嗮
 
 ### `~trime_keyboards.yaml`
 * TRIME用。要複製其內容到 `trime.custom.yaml`。
