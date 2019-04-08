@@ -14,7 +14,7 @@
 * 要 [`stroke.dict.yaml`](https://github.com/rime/rime-stroke)。
 
 ### `~trime_keyboards.yaml`
-* 要複製其內容到 `trime.custom.yaml`。
+* TRIME用。要複製其內容到 `trime.custom.yaml`。
 * 可以 swipe 空格鍵移動光標。`空格`+`swipe left / swipe right`→`move left / move right`。
 
 #### `stroke` 五筆畫
