@@ -146,7 +146,7 @@ translator:
 
 reverse_lookup:
   dictionary: stroke
-  prism: 9key_dictgen_stroke
+  prism: dictgen_9key_stroke
   enable_completion: true
   enable_sentence: true # ??
   prefix: "`"
