@@ -15,6 +15,8 @@
 ### `dictgen_9key_stroke` （9鍵反查用）五筆畫
 * depends:
   * [`stroke.dict.yaml`](https://github.com/rime/rime-stroke)。
+* recommends:
+  * `9key_terra_pinyin.schema.yaml`（本 repo）。
 * 必 deploy 之。
 
 ### `yytpiq_toneless` yytpiq_toneless
