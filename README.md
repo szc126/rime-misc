@@ -13,6 +13,9 @@
 * 是爲了`9key_terra_pinyin`的五筆畫反查。必 deploy 之。
 * 要 [`stroke.dict.yaml`](https://github.com/rime/rime-stroke)。
 
+### `yytpiq_toneless` yytpiq_toneless
+* 私人用……都已經 upload 咗其他啲
+
 ### `~trime_keyboards.yaml`
 * TRIME用。要複製其內容到 `trime.custom.yaml`。
 * 可以 swipe 空格鍵移動光標。`空格`+`swipe left / swipe right`→`move left / move right`。
