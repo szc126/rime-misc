@@ -4,7 +4,8 @@
 ## 配方
 
 ### `9key_terra_pinyin` 9鍵地球拼音
-* TRIME用。
+* [TRIME](https://github.com/osfans/trime) 用。
+  * →[`#user-content-trime_keyboardsyaml`](#user-content-trime_keyboardsyaml)。
 * 多用簡拼就會開始卡頓。
 * 要 [`terra_pinyin.dict.yaml`](https://github.com/rime/rime-terra-pinyin)。
 * 建議安裝 `dictgen_9key_stroke.schema.yaml`（反查）。
@@ -17,7 +18,7 @@
 * 私人用……其他啲都已經 upload 嗮
 
 ### `~trime_keyboards.yaml`
-* TRIME用。要複製其內容到 `trime.custom.yaml`。
+* TRIME 用。要複製其內容到 `trime.custom.yaml`。
 * 可以 swipe 空格鍵移動光標。`空格`+`swipe left / swipe right`→`move left / move right`。
 
 #### `stroke` 五筆畫
