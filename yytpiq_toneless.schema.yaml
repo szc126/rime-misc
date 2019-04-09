@@ -46,34 +46,32 @@ speller:
   alphabet: bpmfdtnlgkqhwzcsyaveiour
   delimiter: " '"
   algebra:
-    - xform/ng/q/
-    - xform/j/Y/
-    - xform/yu/y/
-    - xform/oe/r/
-    - xform/eoi/ue/
-    - xform/eo/u/
-    - xform/aa/A/
-    - xform/a/v/
-    - xform/Y/y/
-    - xform/A/a/
-    - abbrev/^([a-z]).+$/$1/     # 首字母簡拼
-    - abbrev/^([gk]w).+$/$1/     # 聲母簡拼
+    - xform ng q
+    - xform j Y
+    - xform yu y
+    - xform oe r
+    - xform eoi ue
+    - xform eo u
+    - xform aa A
+    - xform a v
+    - xlit YA ya
+    - abbrev/^([a-z]).+$/$1/
+    - abbrev/^([gk]w).+$/$1/
 
 translator:
   dictionary: jyutping
   prism: yytpiq_toneless
   spelling_hints: 10
   comment_format:
-    - xform/ng/q/
-    - xform/j/Y/
-    - xform/yu/y/
-    - xform/oe/r/
-    - xform/eoi/ue/
-    - xform/eo/u/
-    - xform/aa/A/
-    - xform/a/v/
-    - xform/Y/y/
-    - xform/A/a/
+    - xform ng q
+    - xform j Y
+    - xform yu y
+    - xform oe r
+    - xform eoi ue
+    - xform eo u
+    - xform aa A
+    - xform a v
+    - xlit YA ya
 
 reverse_lookup:
   dictionary: terra_pinyin # luna 我不（需要）裝
@@ -85,16 +83,15 @@ reverse_lookup:
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
   comment_format:
-    - xform/ng/q/
-    - xform/j/Y/
-    - xform/yu/y/
-    - xform/oe/r/
-    - xform/eoi/ue/
-    - xform/eo/u/
-    - xform/aa/A/
-    - xform/a/v/
-    - xform/Y/y/
-    - xform/A/a/
+    - xform ng q
+    - xform j Y
+    - xform yu y
+    - xform oe r
+    - xform eoi ue
+    - xform eo u
+    - xform aa A
+    - xform a v
+    - xlit YA ya
 
 punctuator:
   import_preset: default
