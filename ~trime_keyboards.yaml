@@ -5,23 +5,23 @@ patch:
     width: 16
     height: 73.33
     keys:
-    - {width: 10}
+    - {width: 16}
     - {click: "?", long_click: "!"}
     - {click: h, label: "一"}
     - {click: s, label: "丨"}
     - {click: p, label: "丿"}
     - {click: BackSpace, long_click: Escape}
-    - {width: 10}
+    - {width: 0}
 
-    - {width: 10}
+    - {width: 16}
     - {click: ",", long_click: "."}
     - {click: n, label: "丶"}
     - {click: z, label: "乙"}
     - {click: "'", label: "詞組"}
     - {click: Return, long_click: CommitComment}
-    - {width: 10}
+    - {width: 0}
 
-    - {width: 10}
+    - {width: 16}
     - {click: Menu, long_click: Menu}
     - {click: Keyboard_symbols, long_click: Keyboard_number}
     - {click: space, swipe_left: Left, swipe_right: Right, width: 48}
