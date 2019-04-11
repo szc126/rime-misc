@@ -1,7 +1,7 @@
 # rime-misc
 * 歡迎各位的反饋。
 
-## 配方
+## 方案
 
 ### `9key_terra_pinyin` 9鍵地球拼音
 * depends:
