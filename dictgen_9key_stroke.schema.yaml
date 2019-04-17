@@ -39,9 +39,6 @@ speller:
   algebra:
     - xlit hspnz 45678
 
-menu:
-  page_size: 9
-
 translator:
   dictionary: stroke
   prism: dictgen_9key_stroke
