@@ -22,6 +22,9 @@
 ### `yytpiq_toneless` yytpiq_toneless
 * 私人用……其他啲都已經 upload 嗮
 
+### `9key_yytpiq_toneless` 9key_yytpiq_toneless
+* -
+
 ## `~trime-keyboards.yaml`
 * depends:
   * [TRIME](https://github.com/osfans/trime)。
@@ -32,6 +35,7 @@
 ### `stroke` 五筆畫
 * depends:
   * [`stroke.schema.yaml`](https://github.com/rime/rime-stroke)。
+* 沒有什麼特別
 
 <details><summary>截圖</summary><img alt="五筆畫" src="https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-stroke.png" /></details>
 
@@ -44,7 +48,7 @@
 
 <details><summary>截圖</summary><img alt="9鍵地球拼音" src="https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-9key_terra_pinyin.png" /><img alt="9鍵地球拼音" src="https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-9key_terra_pinyin-stroke.png" /></details>
 
-### `9key_yytpiq_toneless` yytpiq_toneless
+### `9key_yytpiq_toneless` 9key_yytpiq_toneless
 * -
 
 <details><summary>截圖</summary><img alt="9key_yytpiq_toneless" src="https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-9key_yytpiq_toneless.png" /></details>
