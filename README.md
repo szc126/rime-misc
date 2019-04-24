@@ -13,7 +13,7 @@
 * 多用簡拼就會開始卡頓。
 
 ### `9key_yytpiq_toneless` 9key_yytpiq_toneless
-* -
+* \-
 
 ### `dictgen_9key_stroke` （9鍵反查用）五筆畫
 * depends:
@@ -36,8 +36,7 @@
 * depends:
   * [`stroke.schema.yaml`](https://github.com/rime/rime-stroke)。
 * 沒有什麼特別
-
-<details><summary>截圖</summary><img alt="五筆畫" src="https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-stroke.png" /></details>
+* <details><summary>截圖</summary><img alt="五筆畫" src="https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-stroke.png" /></details>
 
 ### `9key_terra_pinyin` 9鍵地球拼音
 * depends:
@@ -45,13 +44,11 @@
 * `PQRS`+`swipe left / swipe up / swipe down / swipe right`→`p / q / r / s`。
   * 可以之打全拼或全拼&middot;9鍵之混合。`5u\`→`路 lù`。
 * <code>&#96;45678'</code>→`一丨丿丶乙`（五筆畫反查）。
-
-<details><summary>截圖</summary><img alt="9鍵地球拼音" src="https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-9key_terra_pinyin.png" /><img alt="9鍵地球拼音" src="https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-9key_terra_pinyin-stroke.png" /></details>
+* <details><summary>截圖</summary><img alt="9鍵地球拼音" src="https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-9key_terra_pinyin.png" /><img alt="9鍵地球拼音" src="https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-9key_terra_pinyin-stroke.png" /></details>
 
 ### `9key_yytpiq_toneless` 9key_yytpiq_toneless
-* -
-
-<details><summary>截圖</summary><img alt="9key_yytpiq_toneless" src="https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-9key_yytpiq_toneless.png" /></details>
+* \-
+* details><summary>截圖</summary><img alt="9key_yytpiq_toneless" src="https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-9key_yytpiq_toneless.png" /></details>
 
 ### `qyeyshanglr_hanja` 옛한글・漢字
 * depends:
@@ -59,5 +56,4 @@
 * `a`+`swipe right`→`ay`。
 * `a`+`long click`→`ya`。
   * `a`+`swipe left`→`yay`。
-
-<details><summary>截圖</summary><img alt="옛한글・漢字" src="https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-qyeyshanglr_hanja.png" /></details>
+* <details><summary>截圖</summary><img alt="옛한글・漢字" src="https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-qyeyshanglr_hanja.png" /></details>
