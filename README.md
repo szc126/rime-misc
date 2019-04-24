@@ -35,14 +35,14 @@
 ### `stroke` 五筆畫
 * depends:
   * [`stroke.schema.yaml`](https://github.com/rime/rime-stroke)。
-* 沒有什麼特別
+* 略改內裝的，沒有什麼特別
 * <details><summary>📷</summary><img alt="五筆畫" src="https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-stroke.png" /></details>
 
 ### `9key_terra_pinyin` 9鍵地球拼音
 * depends:
   * `9key_terra_pinyin.schema.yaml`（本 repo）。
 * `PQRS`+`swipe left / swipe up / swipe down / swipe right`→`p / q / r / s`。
-  * 可以之打全拼或全拼&middot;9鍵之混合。`5u\`→`路 lù`。
+  * 可以之打全拼、混打全拼&middot;9鍵。`5u\`→`路 lù`。
 * <code>&#96;45678'</code>→`一丨丿丶乙`（五筆畫反查）。
 * <details><summary>📷</summary><img alt="9鍵地球拼音" src="https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-9key_terra_pinyin.png" /><img alt="9鍵地球拼音" src="https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-9key_terra_pinyin-stroke.png" /></details>
 
