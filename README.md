@@ -33,6 +33,8 @@
 * depends:
   * [`stroke.schema.yaml`](https://github.com/rime/rime-stroke)。
 
+<details><summary>截圖</summary>![五筆畫](https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-stroke.png)</details>
+
 ### `9key_terra_pinyin` 9鍵地球拼音
 * depends:
   * `9key_terra_pinyin.schema.yaml`（本 repo）。
@@ -40,8 +42,12 @@
   * 可以之打全拼或全拼&middot;9鍵之混合。`5u\`→`路 lù`。
 * <code>&#96;45678'</code>→`一丨丿丶乙`（五筆畫反查）。
 
+<details><summary>截圖</summary>![9鍵地球拼音](https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-9key_terra_pinyin.png)![9鍵地球拼音](https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-9key_terra_pinyin-stroke.png)</details>
+
 ### `9key_yytpiq_toneless` yytpiq_toneless
 * -
+
+<details><summary>截圖</summary>![yytpiq_toneless](https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-yytpiq_toneless.png)</details>
 
 ### `qyeyshanglr_hanja` 옛한글・漢字
 * depends:
@@ -49,3 +55,5 @@
 * `a`+`swipe right`→`ay`。
 * `a`+`long click`→`ya`。
   * `a`+`swipe left`→`yay`。
+
+<details><summary>截圖</summary>![옛한글・漢字](https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-qyeyshanglr_hanja.png)</details>
