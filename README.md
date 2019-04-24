@@ -22,11 +22,12 @@
 ### `yytpiq_toneless` yytpiq_toneless
 * 私人用……其他啲都已經 upload 嗮
 
-## `~trime_keyboards.yaml`
+## `~trime-keyboards.yaml`
 * depends:
   * [TRIME](https://github.com/osfans/trime)。
 * 要複製其內容到 `trime.custom.yaml`。
 * 可以 swipe 空格鍵移動光標。`空格`+`swipe left / swipe right`→`move left / move right`。
+  * 包括給 `preset_keyboards/qwerty` 和 `preset_keyboards/symbols` 的補丁，是爲此。（`a` 鍵難 swipe left……）
 
 ### `stroke` 五筆畫
 * depends:
@@ -38,6 +39,9 @@
 * `PQRS`+`swipe left / swipe up / swipe down / swipe right`→`p / q / r / s`。
   * 可以之打全拼或全拼&middot;9鍵之混合。`5u\`→`路 lù`。
 * <code>&#96;45678'</code>→`一丨丿丶乙`（五筆畫反查）。
+
+### `9key_yytpiq_toneless` yytpiq_toneless
+* -
 
 ### `qyeyshanglr_hanja` 옛한글・漢字
 * depends:

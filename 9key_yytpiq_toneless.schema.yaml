@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 schema:
-  schema_id: yytpiq_toneless
-  name: yytpiq_toneless
+  schema_id: 9key_yytpiq_toneless
+  name: 9key_yytpiq_toneless
   author:
     - 基於 jyutping (https://github.com/rime/rime-jyutping)
 
@@ -43,8 +43,8 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: bpmfdtnlgkqhwzcsyaveiour
-  delimiter: " '"
+  alphabet: '123456789abcdefghijklmnopqrstuvwxyz'
+  delimiter: " 1"
   algebra:
     - xform ng q
     - xform j Y
@@ -57,10 +57,36 @@ speller:
     - xlit YA ya
     - abbrev/^([a-z]).+$/$1/
     - abbrev/^([gk]w).+$/$1/
+    - fuzz a 2
+    - fuzz b 2
+    - fuzz c 2
+    - fuzz d 3
+    - fuzz e 3
+    - fuzz f 3
+    - fuzz g 4
+    - fuzz h 4
+    - fuzz i 4
+    - fuzz j 5
+    - fuzz k 5
+    - fuzz l 5
+    - fuzz m 6
+    - fuzz n 6
+    - fuzz o 6
+    - fuzz p 7
+    - fuzz q 7
+    - fuzz r 7
+    - fuzz s 7
+    - fuzz t 8
+    - fuzz u 8
+    - fuzz v 8
+    - fuzz w 9
+    - fuzz x 9
+    - fuzz y 9
+    - fuzz z 9
 
 translator:
   dictionary: jyutping
-  prism: yytpiq_toneless
+  prism: 9key_yytpiq_toneless
   spelling_hints: 10
   comment_format:
     - xform ng q
@@ -74,7 +100,8 @@ translator:
     - xlit YA ya
 
 reverse_lookup:
-  dictionary: terra_pinyin # luna 我不（需要）裝
+  dictionary: terra_pinyin
+  prism: 9key_terra_pinyin
   prefix: "`"
   suffix: "'"
   tips: 〔拼音〕
@@ -96,11 +123,7 @@ reverse_lookup:
 punctuator:
   import_preset: default
 
-key_binder:
-  # enable paging with .,
-  import_preset: default
-
 recognizer:
   import_preset: default
   patterns:
-    reverse_lookup: "`[a-z]*'?$"
+    reverse_lookup: "`[1-9a-z]*'?$"
