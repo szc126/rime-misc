@@ -48,7 +48,7 @@
 
 ### `9key_yytpiq_toneless` 9key_yytpiq_toneless
 * \-
-* details><summary>截圖</summary><img alt="9key_yytpiq_toneless" src="https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-9key_yytpiq_toneless.png" /></details>
+* <details><summary>截圖</summary><img alt="9key_yytpiq_toneless" src="https://raw.githubusercontent.com/szc126/rime-misc/master/img/trime-9key_yytpiq_toneless.png" /></details>
 
 ### `qyeyshanglr_hanja` 옛한글・漢字
 * depends:
