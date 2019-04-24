@@ -12,6 +12,9 @@
   * `dictgen_9key_stroke.schema.yaml`（五筆畫反查）（本 repo）。
 * 多用簡拼就會開始卡頓。
 
+### `9key_yytpiq_toneless` 9key_yytpiq_toneless
+* -
+
 ### `dictgen_9key_stroke` （9鍵反查用）五筆畫
 * depends:
   * [`stroke.dict.yaml`](https://github.com/rime/rime-stroke)。
@@ -21,9 +24,6 @@
 
 ### `yytpiq_toneless` yytpiq_toneless
 * 私人用……其他啲都已經 upload 嗮
-
-### `9key_yytpiq_toneless` 9key_yytpiq_toneless
-* -
 
 ## `~trime-keyboards.yaml`
 * depends:
