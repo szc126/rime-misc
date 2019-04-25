@@ -23,7 +23,7 @@
 * 必 deploy 之。
 
 ### `yytpiq_toneless` yytpiq_toneless
-* 私人用……其他啲都已經 upload 嗮
+* 私人用……第啲都已經 upload 嗮
 
 ## `~trime-keyboards.yaml`
 * depends:
