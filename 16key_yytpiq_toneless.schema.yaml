@@ -120,14 +120,14 @@ translator:
     - xform/C$/p/
     - xform/S$/t/
     - xform/Y$/k/
-    - xform/^B/b/
-    - xform/^P/p/
-    - xform/^M/m/
-    - xform/^F/f/
-    - xform/^D/d/
-    - xform/^T/t/
-    - xform/^N/n/
-    - xform/^L/l/
+    - xform/^a(?=.)/b/
+    - xform/^v(?=.)/p/
+    - xform/^e(?=.)/m/
+    - xform/^i(?=.)/f/
+    - xform/^o(?=.)/d/
+    - xform/^u(?=.)/t/
+    - xform/^r(?=.)/n/
+    - xform/^y(?=.)/l/
     - xform/^G/g/
     - xform/^K/k/
     - xform/^Q/q/
