@@ -61,8 +61,8 @@ speller:
     - xform aa A
     - xform a v
     - xlit YA ya
-    - abbrev/^([a-z]).+$/$1/
-    - abbrev/^([gk]w).+$/$1/
+    #- abbrev/^([a-z]).+$/$1/
+    #- abbrev/^([gk]w).+$/$1/
     - xform/ue$/uu/ # -ue -uu
     - xform/^b/B/
     - xform/^p/P/
