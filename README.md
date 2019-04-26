@@ -61,9 +61,13 @@
 * <details><summary>📷</summary><img alt="9鍵地球拼音" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_terra_pinyin.png" /><img alt="9鍵地球拼音" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_terra_pinyin-stroke.png" /></details>
 
 ### `9key_yytpiq_toneless` 9鍵三橛粵拼（無聲調）
+* depends:
+  * `9key_yytpiq_toneless.schema.yaml`（本 repo）。
 * <details><summary>📷</summary><img alt="9key_yytpiq_toneless" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_yytpiq_toneless.png" /></details>
 
 ### `16key_yytpiq_toneless` 16鍵三橛粵拼（無聲調）
+* depends:
+  * `16key_yytpiq_toneless.schema.yaml`（本 repo）。
 * <details><summary>📷</summary><img alt="16key_yytpiq_toneless" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-16key_yytpiq_toneless.png" /></details>
 
 ### `qyeyshanglr_hanja` 옛한글・漢字
