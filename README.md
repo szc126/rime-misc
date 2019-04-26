@@ -37,7 +37,7 @@
   * `9key_terra_pinyin.schema.yaml`（本 repo）。
 * 必 deploy 之。
 
-### `yytpiq_toneless` yytpiq_toneless
+### `yytpiq_toneless` 三橛粵拼（無聲調）
 * depends:
   * [`jyutping.dict.yaml`](https://github.com/rime/rime-jyutping)。
 * recommends:
@@ -60,10 +60,10 @@
 * <code>&#96;45678'</code>→`一丨丿丶乙`（五筆畫反查）。
 * <details><summary>📷</summary><img alt="9鍵地球拼音" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_terra_pinyin.png" /><img alt="9鍵地球拼音" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_terra_pinyin-stroke.png" /></details>
 
-### `9key_yytpiq_toneless` 9key_yytpiq_toneless
+### `9key_yytpiq_toneless` 9鍵三橛粵拼（無聲調）
 * <details><summary>📷</summary><img alt="9key_yytpiq_toneless" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_yytpiq_toneless.png" /></details>
 
-### `16key_yytpiq_toneless` 16key_yytpiq_toneless
+### `16key_yytpiq_toneless` 16鍵三橛粵拼（無聲調）
 * <details><summary>📷</summary><img alt="16key_yytpiq_toneless" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-16key_yytpiq_toneless.png" /></details>
 
 ### `qyeyshanglr_hanja` 옛한글・漢字
