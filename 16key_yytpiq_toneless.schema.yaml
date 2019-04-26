@@ -63,7 +63,7 @@ speller:
     - xlit YA ya
     - abbrev/^([a-z]).+$/$1/
     - abbrev/^([gk]w).+$/$1/
-    - xform/ue$/ZZ/ # -ue -uu
+    - xform/ue$/uu/ # -ue -uu
     - xform/^b/B/
     - xform/^p/P/
     - xform/^m/M/
@@ -104,7 +104,22 @@ translator:
   spelling_hints: 10
   preedit_format:
     - xlit abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKMNLOPQRSTUVWXYZ
-    - xform/ZZ$/ue/ # -ue -uu
+    - xform/B/a/
+    - xform/P/v/
+    - xform/M/e/
+    - xform/F/i/
+    - xform/D/o/
+    - xform/T/u/
+    - xform/N/r/
+    - xform/L/y/
+    - xform/G$/i/
+    - xform/K$/m/
+    - xform/Q$/n/
+    - xform/H$/q/
+    - xform/Z$/u/
+    - xform/C$/p/
+    - xform/S$/t/
+    - xform/Y$/k/
     - xform/^B/b/
     - xform/^P/p/
     - xform/^M/m/
@@ -121,22 +136,7 @@ translator:
     - xform/^C/c/
     - xform/^S/s/
     - xform/^Y/y/
-    - xform/G$/i/
-    - xform/K$/m/
-    - xform/Q$/n/
-    - xform/H$/q/
-    - xform/Z$/u/
-    - xform/C$/p/
-    - xform/S$/t/
-    - xform/Y$/k/
-    - xform/B/a/
-    - xform/P/v/
-    - xform/M/e/
-    - xform/F/i/
-    - xform/D/o/
-    - xform/T/u/
-    - xform/N/r/
-    - xform/L/y/
+    - xform/uu$/ue/ # -ue -uu
   comment_format:
     - xform ng q
     - xform j Y
