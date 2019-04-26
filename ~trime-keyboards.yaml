@@ -91,6 +91,41 @@ patch:
     - {click: space, swipe_left: Left, swipe_right: Right, width: 40}
     - {click: "?", long_click: "!"}
 
+  "preset_keyboards/16key_yytpiq_toneless":
+    name: 16key_yytpiq_toneless
+    ascii_mode: 0
+    width: 20
+    height: 44
+    keys:
+    - {click: "b", label: "ba", long_click: " "}
+    - {click: "p", label: "pv", long_click: " "}
+    - {click: "m", label: "me", long_click: " "}
+    - {click: "f", label: "fi", long_click: " "}
+    - {click: BackSpace, long_click: Escape}
+
+    - {click: "d", label: "do", long_click: " "}
+    - {click: "t", label: "tu", long_click: " "}
+    - {click: "n", label: "nr", long_click: " "}
+    - {click: "l", label: "ly", long_click: " "}
+    - {click: Keyboard_symbols, long_click: Keyboard_number}
+
+    - {click: "g", label: "gi", long_click: "gw"}
+    - {click: "k", label: "km", long_click: "kw"}
+    - {click: "q", label: "qn", long_click: " "}
+    - {click: "h", label: "hq", long_click: " "}
+    - {click: Return, long_click: CommitComment}
+
+    - {click: "z", label: "zu", long_click: " "}
+    - {click: "c", label: "cp", long_click: "j"}
+    - {click: "s", label: "st", long_click: "x"}
+    - {click: "y", label: "yk", long_click: "w"}
+    - {click: ",", long_click: '\'}
+
+    - {click: Menu, long_click: Menu}
+    - {click: ".", long_click: ","}
+    - {click: space, swipe_left: Left, swipe_right: Right, width: 40}
+    - {click: "!", long_click: "?"}
+
   "preset_keyboards/qyeyshanglr_hanja":
     name: 옛한글・漢字
     ascii_mode: 0
