@@ -1,0 +1,146 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: 16key_yytpiq_toneless
+  name: 16key_yytpiq_toneless
+  author:
+    - 基於 jyutping (https://github.com/rime/rime-jyutping)
+  description:
+    - ba pv me fi    bpmf avei
+    - do tu nr ly    dtnl oury
+    - gi km qn hq    gkqh      i mnq
+    - zu cp st yk    zcsy      u ptk
+    - g-gw k-kw (c-j) (s-x) y-w
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: simplification
+    states: [ 漢字, 汉字 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+    - reverse_lookup_translator
+  filters:
+    - simplifier
+    - uniquifier
+
+speller:
+  alphabet: '123456789abcdefghijklmnopqrstuvwxyz'
+  delimiter: " 1"
+  algebra:
+    - xform ng q
+    - xform j Y
+    - xform yu y
+    - xform oe r
+    - xform eoi ue
+    - xform eo u
+    - xform aa A
+    - xform a v
+    - xlit YA ya
+    - abbrev/^([a-z]).+$/$1/
+    - abbrev/^([gk]w).+$/$1/
+
+    - xform/^b/B/
+    - xform/^p/P/
+    - xform/^m/M/
+    - xform/^f/F/
+    - xform/^d/D/
+    - xform/^t/T/
+    - xform/^n/N/
+    - xform/^l/L/
+    - xform/^g/G/
+    - xform/^k/K/
+    - xform/^q/Q/
+    - xform/^h/H/
+    - xform/^z/Z/
+    - xform/^c/C/
+    - xform/^s/S/
+    - xform/^y/Y/
+
+    - xform/i$/G/
+    - xform/m$/K/
+    - xform/n$/Q/
+    - xform/q$/H/
+    - xform/u$/Z/
+    - xform/p$/C/
+    - xform/t$/S/
+    - xform/k$/Y/
+
+    - xform/a/B/
+    - xform/v/P/
+    - xform/e/M/
+    - xform/i/F/
+    - xform/o/D/
+    - xform/u/T/
+    - xform/r/N/
+    - xform/y/L/
+
+    - xlit ABCDEFGHIJKMNLOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz
+
+translator:
+  dictionary: jyutping
+  prism: 16key_yytpiq_toneless
+  spelling_hints: 10
+  comment_format:
+    - xform ng q
+    - xform j Y
+    - xform yu y
+    - xform oe r
+    - xform eoi ue
+    - xform eo u
+    - xform aa A
+    - xform a v
+    - xlit YA ya
+
+reverse_lookup:
+  dictionary: terra_pinyin
+  prism: 9key_terra_pinyin
+  prefix: "`"
+  suffix: "'"
+  tips: 〔拼音〕
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+  comment_format:
+    - xform ng q
+    - xform j Y
+    - xform yu y
+    - xform oe r
+    - xform eoi ue
+    - xform eo u
+    - xform aa A
+    - xform a v
+    - xlit YA ya
+
+punctuator:
+  import_preset: default
+
+recognizer:
+  import_preset: default
+  patterns:
+    reverse_lookup: "`[1-9a-z]*'?$"
