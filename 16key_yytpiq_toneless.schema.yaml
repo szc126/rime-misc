@@ -11,6 +11,8 @@ schema:
     - do tu nr ly    dtnl oury
     - gi km qn hq    gkqh      i mnq
     - zu cp st yk    zcsy      u ptk
+    -               ^C    V    V|C$
+    -
     - g-gw k-kw (c-j) (s-x) y-w
 
 switches:
@@ -50,7 +52,7 @@ engine:
 
 speller:
   alphabet: '123456789abcdefghijklmnopqrstuvwxyz'
-  delimiter: " 1"
+  delimiter: " '"
   algebra:
     - xform ng q
     - xform j Y
@@ -61,9 +63,20 @@ speller:
     - xform aa A
     - xform a v
     - xlit YA ya
-    #- abbrev/^([a-z]).+$/$1/
-    #- abbrev/^([gk]w).+$/$1/
+    - abbrev/^([a-z]).+$/$1/
+    - abbrev/^([gk]w).+$/$1/
+
     - xform/ue$/uu/ # -ue -uu
+
+    - xform/([aveioury])i$/$1G/
+    - xform/([aveiouryh])m$/$1K/
+    - xform/([aveioury])n$/$1Q/
+    - xform/([aveiouryh])q$/$1H/
+    - xform/([aveioury])u$/$1Z/
+    - xform/([aveioury])p$/$1C/
+    - xform/([aveioury])t$/$1S/
+    - xform/([aveioury])k$/$1Y/
+
     - xform/^b/B/
     - xform/^p/P/
     - xform/^m/M/
@@ -80,14 +93,8 @@ speller:
     - xform/^c/C/
     - xform/^s/S/
     - xform/^y/Y/
-    - xform/i$/G/
-    - xform/m$/K/
-    - xform/n$/Q/
-    - xform/q$/H/
-    - xform/u$/Z/
-    - xform/p$/C/
-    - xform/t$/S/
-    - xform/k$/Y/
+    - xform/w/W/
+
     - xform/a/B/
     - xform/v/P/
     - xform/e/M/
@@ -96,38 +103,26 @@ speller:
     - xform/u/T/
     - xform/r/N/
     - xform/y/L/
-    - xlit ABCDEFGHIJKMNLOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz
+
+    - xlit ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz
 
 translator:
   dictionary: jyutping
   prism: 16key_yytpiq_toneless
   spelling_hints: 10
-  preedit_format:
-    - xlit abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKMNLOPQRSTUVWXYZ
-    - xform/B/a/
-    - xform/P/v/
-    - xform/M/e/
-    - xform/F/i/
-    - xform/D/o/
-    - xform/T/u/
-    - xform/N/r/
-    - xform/L/y/
-    - xform/G$/i/
-    - xform/K$/m/
-    - xform/Q$/n/
-    - xform/H$/q/
-    - xform/Z$/u/
-    - xform/C$/p/
-    - xform/S$/t/
-    - xform/Y$/k/
-    - xform/^a(?=.)/b/
-    - xform/^v(?=.)/p/
-    - xform/^e(?=.)/m/
-    - xform/^i(?=.)/f/
-    - xform/^o(?=.)/d/
-    - xform/^u(?=.)/t/
-    - xform/^r(?=.)/n/
-    - xform/^y(?=.)/l/
+  xxx_preedit_format:
+    # xxx，唔好用
+
+    - xlit abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+    - xform/^B/b/
+    - xform/^P/p/
+    - xform/^M/m/
+    - xform/^F/f/
+    - xform/^D/d/
+    - xform/^T/t/
+    - xform/^N/n/
+    - xform/^L/l/
     - xform/^G/g/
     - xform/^K/k/
     - xform/^Q/q/
@@ -136,7 +131,28 @@ translator:
     - xform/^C/c/
     - xform/^S/s/
     - xform/^Y/y/
+    - xform/^W/w/
+
+    - xform/G$/i/
+    - xform/K$/m/
+    - xform/Q$/n/
+    - xform/H$/q/
+    - xform/Z$/u/
+    - xform/C$/p/
+    - xform/S$/t/
+    - xform/Y$/k/
+
+    - xform/B/a/
+    - xform/P/v/
+    - xform/M/e/
+    - xform/F/i/
+    - xform/D/o/
+    - xform/T/u/
+    - xform/N/r/
+    - xform/L/y/
+
     - xform/uu$/ue/ # -ue -uu
+
   comment_format:
     - xform ng q
     - xform j Y
@@ -148,7 +164,8 @@ translator:
     - xform a v
     - xlit YA ya
 
-reverse_lookup:
+# xxx，現在無法用
+xxx_reverse_lookup:
   dictionary: terra_pinyin
   prism: 9key_terra_pinyin
   prefix: "`"
@@ -174,5 +191,6 @@ punctuator:
 
 recognizer:
   import_preset: default
-  patterns:
+  xxx_patterns:
+    # xxx，現在無法用
     reverse_lookup: "`[1-9a-z]*'?$"
