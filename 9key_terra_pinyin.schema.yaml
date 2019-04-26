@@ -3,7 +3,8 @@
 
 schema:
   schema_id: 9key_terra_pinyin
-  name: 9鍵地球拼音
+  name: "9鍵地球拼音"
+  version: "1.0.0"
   author:
     - 基於 terra_pinyin (https://github.com/rime/rime-terra-pinyin)
 

@@ -3,7 +3,8 @@
 
 schema:
   schema_id: 9key_yytpiq_toneless
-  name: 9key_yytpiq_toneless
+  name: "9鍵三橛粵拼（無聲調）"
+  version: "1.0.0"
   author:
     - 基於 jyutping (https://github.com/rime/rime-jyutping)
 

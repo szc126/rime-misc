@@ -5,36 +5,8 @@ patch:
   "preset_keyboards/symbols/keys/@42":
     {click: space, swipe_left: Left, swipe_right: Right, width: 40}
 
-  "preset_keyboards/stroke":
-    name: 五筆畫
-    author: "基於 TRIME 內裝的五筆畫鍵盤"
-    ascii_mode: 0
-    width: 16
-    height: 73.33
-    keys:
-    - {width: 16}
-    - {click: "?", long_click: "!"}
-    - {click: h, label: "一"}
-    - {click: s, label: "丨"}
-    - {click: p, label: "丿"}
-    - {click: BackSpace, long_click: Escape}
-    - {width: 0}
-
-    - {width: 16}
-    - {click: ",", long_click: "."}
-    - {click: n, label: "丶"}
-    - {click: z, label: "乙"}
-    - {click: "'", label: "詞組"}
-    - {click: Return, long_click: CommitComment}
-    - {width: 0}
-
-    - {width: 16}
-    - {click: Menu, long_click: Menu}
-    - {click: Keyboard_symbols, long_click: Keyboard_number}
-    - {click: space, swipe_left: Left, swipe_right: Right, width: 48}
-
   "preset_keyboards/9key_terra_pinyin":
-    name: 9鍵地球拼音
+    name: "9鍵地球拼音"
     ascii_mode: 0
     width: 20
     height: 55
@@ -63,7 +35,7 @@ patch:
     - {click: "?", long_click: "!"}
 
   "preset_keyboards/9key_yytpiq_toneless":
-    name: 9鍵地球拼音
+    name: "9鍵三橛粵拼（無聲調）"
     ascii_mode: 0
     width: 20
     height: 55
@@ -92,33 +64,33 @@ patch:
     - {click: "?", long_click: "!"}
 
   "preset_keyboards/16key_yytpiq_toneless":
-    name: 16key_yytpiq_toneless
+    name: "16鍵三橛粵拼（無聲調）"
     ascii_mode: 0
     width: 20
     height: 44
     keys:
-    - {click: "b", label: "ba", long_click: " "}
-    - {click: "p", label: "pv", long_click: " "}
-    - {click: "m", label: "me", long_click: " "}
-    - {click: "f", label: "fi", long_click: " "}
+    - {click: "b", label: "ba", swipe_left: "b", swipe_right: "a", long_click: "1"}
+    - {click: "d", label: "do", swipe_left: "d", swipe_right: "o", long_click: "5"}
+    - {click: "g", label: "gi", swipe_left: "g", swipe_right: "i", long_click: "gw"}
+    - {click: "z", label: "zu", swipe_left: "z", swipe_right: "u", long_click: "(){Left}"}
     - {click: BackSpace, long_click: Escape}
 
-    - {click: "d", label: "do", long_click: " "}
-    - {click: "t", label: "tu", long_click: " "}
-    - {click: "n", label: "nr", long_click: " "}
-    - {click: "l", label: "ly", long_click: " "}
+    - {click: "p", label: "pv", swipe_left: "p", swipe_right: "v", long_click: "2"}
+    - {click: "t", label: "tu", swipe_left: "t", swipe_right: "u", long_click: "6"}
+    - {click: "k", label: "km", swipe_left: "k", swipe_right: "m", long_click: "kw"}
+    - {click: "c", label: "cp", swipe_left: "c", swipe_right: "p", long_click: "j"}
     - {click: Keyboard_symbols, long_click: Keyboard_number}
 
-    - {click: "g", label: "gi", long_click: "gw"}
-    - {click: "k", label: "km", long_click: "kw"}
-    - {click: "q", label: "qn", long_click: " "}
-    - {click: "h", label: "hq", long_click: " "}
+    - {click: "m", label: "me", swipe_left: "m", swipe_right: "e", long_click: "3"}
+    - {click: "n", label: "nr", swipe_left: "n", swipe_right: "r", long_click: "7"}
+    - {click: "q", label: "qn", swipe_left: "q", swipe_right: "n", long_click: "9"}
+    - {click: "s", label: "st", swipe_left: "s", swipe_right: "t", long_click: "x"}
     - {click: Return, long_click: CommitComment}
 
-    - {click: "z", label: "zu", long_click: " "}
-    - {click: "c", label: "cp", long_click: "j"}
-    - {click: "s", label: "st", long_click: "x"}
-    - {click: "y", label: "yk", long_click: "w"}
+    - {click: "f", label: "fi", swipe_left: "f", swipe_right: "i", long_click: "4"}
+    - {click: "l", label: "ly", swipe_left: "l", swipe_right: "y", long_click: "8"}
+    - {click: "h", label: "hq", swipe_left: "h", swipe_right: "q", long_click: "0"}
+    - {click: "y", label: "yk", swipe_left: "y", swipe_right: "k", long_click: "w"}
     - {click: ",", long_click: '\'}
 
     - {click: Menu, long_click: Menu}
@@ -127,7 +99,7 @@ patch:
     - {click: "!", long_click: "?"}
 
   "preset_keyboards/qyeyshanglr_hanja":
-    name: 옛한글・漢字
+    name: "옛한글・漢字"
     ascii_mode: 0
     width: 12.5
     height: 44
@@ -172,3 +144,31 @@ patch:
     - {click: Keyboard_symbols, long_click: Keyboard_number, width: 18.75}
     - {click: space, long_click: "'", swipe_left: Left, swipe_right: Right, width: 25}
     - {click: CommitScriptText, long_click: Return, width: 37.5}
+
+  "preset_keyboards/stroke":
+    name: "五筆畫"
+    author: "基於 TRIME 內裝的五筆畫鍵盤"
+    ascii_mode: 0
+    width: 16
+    height: 73.33
+    keys:
+    - {width: 16}
+    - {click: "?", long_click: "!"}
+    - {click: h, label: "一"}
+    - {click: s, label: "丨"}
+    - {click: p, label: "丿"}
+    - {click: BackSpace, long_click: Escape}
+    - {width: 0}
+
+    - {width: 16}
+    - {click: ",", long_click: "."}
+    - {click: n, label: "丶"}
+    - {click: z, label: "乙"}
+    - {click: "'", label: "詞組"}
+    - {click: Return, long_click: CommitComment}
+    - {width: 0}
+
+    - {width: 16}
+    - {click: Menu, long_click: Menu}
+    - {click: Keyboard_symbols, long_click: Keyboard_number}
+    - {click: space, swipe_left: Left, swipe_right: Right, width: 48}

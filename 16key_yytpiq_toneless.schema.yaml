@@ -3,15 +3,15 @@
 
 schema:
   schema_id: 16key_yytpiq_toneless
-  name: 16key_yytpiq_toneless
+  name: "16鍵三橛粵拼（無聲調）"
+  version: "1.0.0"
   author:
     - 基於 jyutping (https://github.com/rime/rime-jyutping)
   description:
-    - ba pv me fi    bpmf avei
-    - do tu nr ly    dtnl oury
-    - gi km qn hq    gkqh      i mnq
-    - zu cp st yk    zcsy      u ptk
-    -               ^C    V    V|C$
+    - ba do gi zu    bdgz ao iu
+    - pv tu km cp    ptkc vu mp
+    - me nr qn st    mnqs er nt
+    - fi ly hq yk    flhy iy qk
     -
     - g-gw k-kw (c-j) (s-x) y-w
 
@@ -164,8 +164,7 @@ translator:
     - xform a v
     - xlit YA ya
 
-# xxx，現在無法用
-xxx_reverse_lookup:
+reverse_lookup:
   dictionary: terra_pinyin
   prism: 9key_terra_pinyin
   prefix: "`"
@@ -191,6 +190,5 @@ punctuator:
 
 recognizer:
   import_preset: default
-  xxx_patterns:
-    # xxx，現在無法用
+  patterns:
     reverse_lookup: "`[1-9a-z]*'?$"

@@ -4,6 +4,7 @@
 schema:
   schema_id: dictgen_9key_stroke
   name: "（9鍵反查用）五筆畫"
+  version: "1.0.0"
   author:
     - 基於 stroke (https://github.com/rime/rime-stroke)
 
