@@ -7,6 +7,7 @@ patch:
 
   "preset_keyboards/9key_terra_pinyin":
     name: "9鍵地球拼音"
+    version: "1.0.0"
     ascii_mode: 0
     width: 20
     height: 55
@@ -36,6 +37,7 @@ patch:
 
   "preset_keyboards/9key_yytpiq_toneless":
     name: "9鍵三橛粵拼（無聲調）"
+    version: "1.0.0"
     ascii_mode: 0
     width: 20
     height: 55
@@ -65,14 +67,15 @@ patch:
 
   "preset_keyboards/16key_yytpiq_toneless":
     name: "16鍵三橛粵拼（無聲調）"
+    version: "2.0.0"
     ascii_mode: 0
     width: 20
     height: 44
     keys:
     - {click: "b", label: "ba", swipe_left: "b", swipe_right: "a", long_click: "1"}
     - {click: "d", label: "do", swipe_left: "d", swipe_right: "o", long_click: "5"}
-    - {click: "g", label: "gi", swipe_left: "g", swipe_right: "i", long_click: "gw"}
-    - {click: "z", label: "zu", swipe_left: "z", swipe_right: "u", long_click: "(){Left}"}
+    - {click: "g", label: "gu", swipe_left: "g", swipe_right: "u", long_click: "gw"}
+    - {click: "z", label: "zi", swipe_left: "z", swipe_right: "i", long_click: "(){Left}"}
     - {click: BackSpace, long_click: Escape}
 
     - {click: "p", label: "pv", swipe_left: "p", swipe_right: "v", long_click: "2"}
@@ -95,11 +98,12 @@ patch:
 
     - {click: Menu, long_click: Menu}
     - {click: ".", long_click: ","}
-    - {click: space, swipe_left: Left, swipe_right: Right, width: 40}
+    - {click: space, long_click: "'", swipe_left: Left, swipe_right: Right, width: 40}
     - {click: "!", long_click: "?"}
 
   "preset_keyboards/qyeyshanglr_hanja":
     name: "옛한글・漢字"
+    version: "1.0.0"
     ascii_mode: 0
     width: 12.5
     height: 44
@@ -148,6 +152,7 @@ patch:
   "preset_keyboards/stroke":
     name: "五筆畫"
     author: "基於 TRIME 內裝的五筆畫鍵盤"
+    version: "1.0.0"
     ascii_mode: 0
     width: 16
     height: 73.33
