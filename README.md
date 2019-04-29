@@ -19,7 +19,7 @@
   * [TRIME](https://github.com/osfans/trime)。
   * `preset_keyboards/9key_yytpiq_toneless`（本 repo）。
   * `9key_terra_pinyin.schema.yaml`（拼音反查）（本 repo）。
-* 唔好用。
+* 麻煩。
 
 ### `16key_yytpiq_toneless` 16鍵三橛粵拼（無聲調）
 * depends:
@@ -28,7 +28,7 @@
   * [TRIME](https://github.com/osfans/trime)。
   * `preset_keyboards/16key_yytpiq_toneless`（本 repo）。
   * `9key_terra_pinyin.schema.yaml`（拼音反查）（本 repo）。
-* 噉仲好啲。
+* 應該唔會咁麻煩。
 
 ### `dictgen_9key_stroke` （9鍵反查用）五筆畫
 * depends:
@@ -58,17 +58,17 @@
 * `PQRS`+`swipe left / swipe up / swipe down / swipe right`→`p / q / r / s`。
   * 可以之打全拼、混打全拼&middot;9鍵。`5u\`→`路 lù`。
 * <code>&#96;45678'</code>→`一丨丿丶乙`（五筆畫反查）。
-* <details><summary>📷</summary><img alt="9鍵地球拼音" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_terra_pinyin.png" /><img alt="9鍵地球拼音" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_terra_pinyin-stroke.png" /></details>
+* <details><summary>📷</summary><img alt="9鍵地球拼音" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_terra_pinyin-1_0_0.png" /><img alt="9鍵地球拼音" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_terra_pinyin-1_0_0-stroke.png" /></details>
 
 ### `9key_yytpiq_toneless` 9鍵三橛粵拼（無聲調）
 * depends:
   * `9key_yytpiq_toneless.schema.yaml`（本 repo）。
-* <details><summary>📷</summary><img alt="9key_yytpiq_toneless" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_yytpiq_toneless.png" /></details>
+* <details><summary>📷</summary><img alt="9鍵三橛粵拼（無聲調）" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_yytpiq_toneless-1_0_0.png" /><img alt="9鍵三橛粵拼（無聲調）" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_yytpiq_toneless-1_0_0-pinyin.png" /></details>
 
 ### `16key_yytpiq_toneless` 16鍵三橛粵拼（無聲調）
 * depends:
   * `16key_yytpiq_toneless.schema.yaml`（本 repo）。
-* <details><summary>📷</summary><img alt="16key_yytpiq_toneless" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-16key_yytpiq_toneless.png" /></details>
+* <details><summary>📷</summary><img alt="16鍵三橛粵拼（無聲調）" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-16key_yytpiq_toneless-2_0_0.png" /></details>
 
 ### `qyeyshanglr_hanja` 옛한글・漢字
 * depends:
@@ -76,10 +76,10 @@
 * `a`+`swipe right`→`ay`。
 * `a`+`long click`→`ya`。
   * `a`+`swipe left`→`yay`。
-* <details><summary>📷</summary><img alt="옛한글・漢字" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-qyeyshanglr_hanja.png" /></details>
+* <details><summary>📷</summary><img alt="옛한글・漢字" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-qyeyshanglr_hanja-1_0_0.png" /></details>
 
 ### `stroke` 五筆畫
 * depends:
   * [`stroke.schema.yaml`](https://github.com/rime/rime-stroke)。
 * 略改內裝的，沒有什麼特別
-* <details><summary>📷</summary><img alt="五筆畫" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-stroke.png" /></details>
+* <details><summary>📷</summary><img alt="五筆畫" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-stroke-1_0_0.png" /></details>
