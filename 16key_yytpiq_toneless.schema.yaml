@@ -4,11 +4,11 @@
 schema:
   schema_id: 16key_yytpiq_toneless
   name: "16鍵三橛粵拼（無聲調）"
-  version: "1.0.0"
+  version: "2.0.1"
   author:
     - 基於 jyutping (https://github.com/rime/rime-jyutping)
   description:
-    - ba do gi zu    bdgz ao iu
+    - ba do gu zi    bdgz ao ui
     - pv tu km cp    ptkc vu mp
     - me nr qn st    mnqs er nt
     - fi ly hq yk    flhy iy qk
@@ -68,15 +68,6 @@ speller:
 
     - xform/ue$/uu/ # -ue -uu
 
-    - xform/([aveioury])i$/$1G/
-    - xform/([aveiouryh])m$/$1K/
-    - xform/([aveioury])n$/$1Q/
-    - xform/([aveiouryh])q$/$1H/
-    - xform/([aveioury])u$/$1Z/
-    - xform/([aveioury])p$/$1C/
-    - xform/([aveioury])t$/$1S/
-    - xform/([aveioury])k$/$1Y/
-
     - xform/^b/B/
     - xform/^p/P/
     - xform/^m/M/
@@ -92,17 +83,26 @@ speller:
     - xform/^z/Z/
     - xform/^c/C/
     - xform/^s/S/
-    - xform/^y/Y/
+    - xform/^y/Y/ # yi Yi, yy Yy
     - xform/w/W/
+
+    - xform/([aveioury])u$/$1G/
+    - xform/([aveiouryh])m$/$1K/
+    - xform/([aveioury])n$/$1Q/
+    - xform/([aveiouryh])q$/$1H/
+    - xform/([aveioury])i$/$1Z/ # yi Yi Yi, yy Yy Yy
+    - xform/([aveioury])p$/$1C/
+    - xform/([aveioury])t$/$1S/
+    - xform/([aveioury])k$/$1Y/
 
     - xform/a/B/
     - xform/v/P/
     - xform/e/M/
-    - xform/i/F/
+    - xform/i/F/ # yi Yi Yi YF
     - xform/o/D/
     - xform/u/T/
     - xform/r/N/
-    - xform/y/L/
+    - xform/y/L/ # yy Yy Yy YL
 
     - xlit ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz
 
@@ -133,11 +133,11 @@ translator:
     - xform/^Y/y/
     - xform/^W/w/
 
-    - xform/G$/i/
+    - xform/G$/u/
     - xform/K$/m/
     - xform/Q$/n/
     - xform/H$/q/
-    - xform/Z$/u/
+    - xform/Z$/i/
     - xform/C$/p/
     - xform/S$/t/
     - xform/Y$/k/
@@ -186,6 +186,10 @@ reverse_lookup:
     - xlit YA ya
 
 punctuator:
+  import_preset: default
+
+key_binder:
+  # enable paging with .,
   import_preset: default
 
 recognizer:
