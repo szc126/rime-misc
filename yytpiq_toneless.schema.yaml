@@ -4,7 +4,7 @@
 schema:
   schema_id: yytpiq_toneless
   name: "三橛粵拼（無聲調）"
-  version: "1.0.0"
+  version: "1.1.0"
   author:
     - 基於 jyutping (https://github.com/rime/rime-jyutping)
 
@@ -44,7 +44,7 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: bpmfdtnlgkqhwzcsyaveiour
+  alphabet: abcdefghijklmnopqrstuvwxyz
   delimiter: " '"
   algebra:
     - xform ng q
