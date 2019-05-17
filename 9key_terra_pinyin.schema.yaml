@@ -4,7 +4,7 @@
 schema:
   schema_id: 9key_terra_pinyin
   name: "9鍵地球拼音"
-  version: "1.0.0"
+  version: "1.0.1"
   author:
     - 基於 terra_pinyin (https://github.com/rime/rime-terra-pinyin)
 
@@ -45,6 +45,7 @@ engine:
 
 speller:
   alphabet: '123456789abcdefghijklmnopqrstuvwxyz;/,\'
+  initials: '123456789abcdefghijklmnopqrstuvwxyz'
   delimiter: " 1"
   algebra:
     - xform/^r5$/er5/
