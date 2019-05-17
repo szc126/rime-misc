@@ -84,7 +84,7 @@ patch:
 
   "preset_keyboards/16key_yytpiq_toneless":
     name: "16鍵三橛粵拼（無聲調）"
-    version: "3.0.0"
+    version: "4.0.0"
     ascii_mode: 0
     width: 20
     height: 44
@@ -111,12 +111,12 @@ patch:
     - {click: "l", label: "ly", swipe_left: "l", swipe_right: "y", long_click: "0"}
     - {click: "h", label: "hq", swipe_left: "h", swipe_right: "q", long_click: "x"}
     - {click: "y", label: "yk", swipe_left: "y", swipe_right: "k", long_click: "w"}
-    - {click: '"', long_click: "`"}
+    - {click: "'", long_click: '"'}
 
     - {click: Menu, long_click: Menu}
-    - {click: ",", long_click: "?"}
-    - {click: space, long_click: "'", swipe_left: Left, swipe_right: Right, width: 40}
-    - {click: ".", long_click: "!"}
+    - {click: ",", long_click: "?", swipe_right: "/"}
+    - {click: space, long_click: "`", swipe_left: Left, swipe_right: Right, width: 40}
+    - {click: ".", long_click: "!", swipe_left: "……"}
 
   "preset_keyboards/qyeyshanglr_hanja":
     name: "옛한글・漢字"
