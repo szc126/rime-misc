@@ -169,13 +169,13 @@ patch:
   "preset_keyboards/stroke":
     name: "五筆畫"
     author: "基於 TRIME 內裝的五筆畫鍵盤"
-    version: "2.0.0"
+    version: "2.1.0"
     ascii_mode: 0
     width: 16
     height: 73.33
     keys:
     - {width: 16}
-    - {click: ",", long_click: "?"}
+    - {click: ",", long_click: "?", swipe_right: "/"}
     - {click: h, label: "一"}
     - {click: s, label: "丨"}
     - {click: p, label: "丿"}
@@ -183,7 +183,7 @@ patch:
     - {width: 0}
 
     - {width: 16}
-    - {click: ".", long_click: "!"}
+    - {click: ".", long_click: "!", swipe_right: "……"}
     - {click: n, label: "丶"}
     - {click: z, label: "乙"}
     - {click: "'", label: "詞組"}
