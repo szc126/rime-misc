@@ -50,6 +50,7 @@
   * [TRIME](https://github.com/osfans/trime)。
 * 要複製其內容到 `trime.custom.yaml`。
 * 可以 swipe 空格鍵移動光標。`空格`+`swipe left / swipe right`→`move left / move right`。
+* `, / .` + 往空格鍵 swipe→`、 / ……`
 * 鍵盤補丁：
   * `preset_keyboards/default`：改變 `Shift` `符號` `中文` 的排序爲 `中文` `符號` `Shift`
   * `a` 鍵難 swipe left，加 `空格`+`swipe left / swipe right`
