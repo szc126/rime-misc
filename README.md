@@ -19,7 +19,6 @@
   * [TRIME](https://github.com/osfans/trime)。
   * `preset_keyboards/9key_yytpiq_toneless`（本 repo）。
   * `9key_terra_pinyin.schema.yaml`（拼音反查）（本 repo）。
-* 麻煩。
 
 ### `16key_yytpiq_toneless` 16鍵三橛粵拼（無聲調）
 * depends:
@@ -28,7 +27,6 @@
   * [TRIME](https://github.com/osfans/trime)。
   * `preset_keyboards/16key_yytpiq_toneless`（本 repo）。
   * `9key_terra_pinyin.schema.yaml`（拼音反查）（本 repo）。
-* 應該唔會咁麻煩。
 
 ### `dictgen_9key_stroke` （9鍵反查用）五筆畫
 * depends:
@@ -48,7 +46,7 @@
 ## `~trime-keyboards.yaml`
 * depends:
   * [TRIME](https://github.com/osfans/trime)。
-* 要複製其內容到 `trime.custom.yaml`。
+* 內容要複製到 `trime.custom.yaml`。
 * 可以 swipe 空格鍵移動光標。`空格`+`swipe left / swipe right`→`move left / move right`。
 * `, / .` + 往空格鍵 swipe→`、 / ……`
 * 鍵盤補丁：
