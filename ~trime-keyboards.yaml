@@ -1,5 +1,5 @@
 patch:
-  # Rearrange the keys for `default`
+  # rearrange the keys for `default`
   #   Shift, 符號, 中文
   # > 中文, 符號, Shift
   "preset_keyboards/default/keys/@42":
@@ -11,7 +11,7 @@ patch:
   "preset_keyboards/default/keys/@40":
     {click: Mode_switch, long_click: Menu}
 
-  # Swipe on space to move cursor
+  # swipe on space to move cursor
   "preset_keyboards/default/keys/@43":
     {click: space, swipe_left: Left, swipe_right: Right, width: 30}
 
@@ -21,7 +21,7 @@ patch:
   "preset_keyboards/symbols/keys/@42":
     {click: space, swipe_left: Left, swipe_right: Right, width: 40}
 
-  # Keyboards
+  # keyboards
   "preset_keyboards/9key_terra_pinyin":
     name: "9鍵地球拼音"
     version: "1.1.0"
