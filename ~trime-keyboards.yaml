@@ -84,33 +84,33 @@ patch:
 
   "preset_keyboards/16key_yytpiq_toneless":
     name: "16鍵三橛粵拼（無聲調）"
-    version: "4.0.0"
+    version: "4.1.0"
     ascii_mode: 0
     width: 20
     height: 44
     keys:
-    - {click: "b", label: "ba", swipe_left: "b", swipe_right: "a", long_click: "1"}
-    - {click: "d", label: "do", swipe_left: "d", swipe_right: "o", long_click: "4"}
-    - {click: "g", label: "gu", swipe_left: "g", swipe_right: "u", long_click: "gw"}
-    - {click: "z", label: "zi", swipe_left: "z", swipe_right: "i", long_click: "7"}
+    - {click: "b", label: "ba", swipe_left: "", swipe_right: "a", long_click: "1"}
+    - {click: "d", label: "do", swipe_left: "", swipe_right: "o", long_click: "4"}
+    - {click: "g", label: "gu", swipe_left: "", swipe_right: "u", long_click: "gw", swipe_up: ""}
+    - {click: "z", label: "zi", swipe_left: "", swipe_right: "i", long_click: "7"}
     - {click: BackSpace, long_click: Escape}
 
-    - {click: "p", label: "pv", swipe_left: "p", swipe_right: "v", long_click: "2"}
-    - {click: "t", label: "tu", swipe_left: "t", swipe_right: "u", long_click: "5"}
-    - {click: "k", label: "km", swipe_left: "k", swipe_right: "m", long_click: "kw"}
-    - {click: "c", label: "cp", swipe_left: "c", swipe_right: "p", long_click: "8"}
+    - {click: "p", label: "pv", swipe_left: "", swipe_right: "v", long_click: "2"}
+    - {click: "t", label: "tu", swipe_left: "", swipe_right: "u", long_click: "5"}
+    - {click: "k", label: "km", swipe_left: "", swipe_right: "m", long_click: "kw", swipe_up: ""}
+    - {click: "c", label: "cp", swipe_left: "", swipe_right: "p", long_click: "8"}
     - {click: Keyboard_symbols, long_click: Keyboard_number}
 
-    - {click: "m", label: "me", swipe_left: "m", swipe_right: "e", long_click: "3"}
-    - {click: "n", label: "nr", swipe_left: "n", swipe_right: "r", long_click: "6"}
-    - {click: "q", label: "qn", swipe_left: "q", swipe_right: "n", long_click: "j"}
-    - {click: "s", label: "st", swipe_left: "s", swipe_right: "t", long_click: "9"}
+    - {click: "m", label: "me", swipe_left: "", swipe_right: "e", long_click: "3"}
+    - {click: "n", label: "nr", swipe_left: "", swipe_right: "r", long_click: "6"}
+    - {click: "q", label: "qn", swipe_left: "", swipe_right: "n", long_click: "j", swipe_up: ""}
+    - {click: "s", label: "st", swipe_left: "", swipe_right: "t", long_click: "9"}
     - {click: Return, long_click: CommitComment}
 
-    - {click: "f", label: "fi", swipe_left: "f", swipe_right: "i", long_click: "(){Left}"}
-    - {click: "l", label: "ly", swipe_left: "l", swipe_right: "y", long_click: "0"}
-    - {click: "h", label: "hq", swipe_left: "h", swipe_right: "q", long_click: "x"}
-    - {click: "y", label: "yk", swipe_left: "y", swipe_right: "k", long_click: "w"}
+    - {click: "f", label: "fi", swipe_left: "", swipe_right: "i", long_click: "(){Left}"}
+    - {click: "l", label: "ly", swipe_left: "", swipe_right: "y", long_click: "0"}
+    - {click: "h", label: "hq", swipe_left: "", swipe_right: "q", long_click: "x", swipe_up: ""}
+    - {click: "y", label: "yk", swipe_left: "", swipe_right: "k", long_click: "w", swipe_up: ""}
     - {click: "'", long_click: '"'}
 
     - {click: Menu, long_click: Menu}
