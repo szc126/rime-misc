@@ -4,34 +4,14 @@
 schema:
   schema_id: dictgen_9key_stroke
   name: "（9鍵反查用）五筆畫"
-  version: "1.0.0"
+  version: "1.0.1"
   author:
     - 基於 stroke (https://github.com/rime/rime-stroke)
 
-switches:
-  - name: ascii_mode
-    reset: 0
-    states: [ 中文, 西文 ]
-
 engine:
   processors:
-    - ascii_composer
-    - recognizer
-    - key_binder
     - speller
-    - punctuator
-    - selector
-    - navigator
-    - express_editor
-  segmentors:
-    - ascii_segmentor
-    - matcher
-    - abc_segmentor
-    - punct_segmentor
-    - fallback_segmentor
   translators:
-    - punct_translator
-    - reverse_lookup_translator
     - table_translator
 
 speller:
@@ -43,12 +23,3 @@ speller:
 translator:
   dictionary: stroke
   prism: dictgen_9key_stroke
-
-punctuator:
-  import_preset: default
-
-key_binder:
-  import_preset: default
-
-recognizer:
-  import_preset: default
