@@ -4,7 +4,7 @@
 schema:
   schema_id: 16key_yytpiq_toneless
   name: "16鍵三橛粵拼（無聲調）"
-  version: "3.0.0"
+  version: "3.1.0"
   author:
     - 基於 jyutping (https://github.com/rime/rime-jyutping)
   description:
@@ -114,49 +114,51 @@ translator:
   dictionary: jyutping
   prism: 16key_yytpiq_toneless
   spelling_hints: 10
-  xxx_preedit_format:
-    # xxx，唔好用
-
+  preedit_format:
+    - xform/^/ /
     - xlit abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
-    - xform/^B/b/
-    - xform/^P/p/
-    - xform/^M/m/
-    - xform/^F/f/
-    - xform/^D/d/
-    - xform/^T/t/
-    - xform/^N/n/
-    - xform/^L/l/
-    - xform/^G/g/
-    - xform/^K/k/
-    - xform/^Q/q/
-    - xform/^H/h/
-    - xform/^Z/z/
-    - xform/^C/c/
-    - xform/^S/s/
-    - xform/^Y/y/
-    - xform/^W/w/
+    - xform/(?<=[ '])B/b/
+    - xform/(?<=[ '])P/p/
+    - xform/(?<=[ '])M/m/
+    - xform/(?<=[ '])F/f/
+    - xform/(?<=[ '])D/d/ # " DDH" " dDH"
+    - xform/(?<=[ '])T/t/
+    - xform/(?<=[ '])N/n/
+    - xform/(?<=[ '])L/l/
+    - xform/(?<=[ '])G/g/
+    - xform/(?<=[ '])K/k/
+    - xform/(?<=[ '])Q/q/
+    - xform/(?<=[ '])H/h/
+    - xform/(?<=[ '])Z/z/
+    - xform/(?<=[ '])C/c/
+    - xform/(?<=[ '])S/s/
+    - xform/(?<=[ '])Y/y/
+    - xform gG gw
+    - xform kK kw
+    - xform yY w
 
-    - xform/G$/u/
-    - xform/K$/m/
-    - xform/Q$/n/
-    - xform/H$/q/
-    - xform/Z$/i/
-    - xform/C$/p/
-    - xform/S$/t/
-    - xform/Y$/k/
+    - xform G u
+    - xform K m
+    - xform Q n
+    - xform H q # " DDH" " dDH" " dDq"
+    - xform Z i
+    - xform C p
+    - xform S t
+    - xform Y k
 
-    - xform/B/a/
-    - xform/P/v/
-    - xform/M/e/
-    - xform/F/i/
-    - xform/D/o/
-    - xform/T/u/
-    - xform/N/r/
-    - xform/L/y/
+    - xform B a
+    - xform P v
+    - xform M e
+    - xform F i
+    - xform D o # " DDH" " dDH" "dDq" " doq"
+    - xform T u
+    - xform N r
+    - xform L y
 
-    - xform/uu$/ue/ # -ue -uu
+    - xform uu ue # -ue -uu
 
+    - xform/^ //
   comment_format:
     - xform ng q
     - xform j Y
