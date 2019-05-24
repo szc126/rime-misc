@@ -84,7 +84,7 @@ patch:
 
   "preset_keyboards/16key_yytpiq_toneless":
     name: "16鍵三橛粵拼（無聲調）"
-    version: "5.0.1"
+    version: "5.0.2"
     ascii_mode: 0
     width: 20
     height: 44
@@ -114,7 +114,7 @@ patch:
     - {click: "'", long_click: '"'}
 
     - {click: Menu, long_click: Menu}
-    - {click: ",", long_click: "?", swipe_right: "/"}
+    - {click: ",", long_click: "?", swipe_right: "\\"}
     - {click: space, long_click: "`", swipe_left: Left, swipe_right: Right, width: 40}
     - {click: ".", long_click: "!", swipe_left: "……"}
 
