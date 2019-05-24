@@ -84,27 +84,27 @@ patch:
 
   "preset_keyboards/16key_yytpiq_toneless":
     name: "16鍵三橛粵拼（無聲調）"
-    version: "4.2.0"
+    version: "5.0.1"
     ascii_mode: 0
     width: 20
     height: 44
     keys:
     - {click: "b", label: "ba", swipe_right: "a", long_click: "1"}
     - {click: "d", label: "do", swipe_right: "o", long_click: "4"}
-    - {click: "g", label: "gu", swipe_right: "u", long_click: ""}
-    - {click: "z", label: "zi", swipe_right: "i", long_click: "7"}
+    - {click: "g", label: "gu", swipe_right: "u", long_click: "7"}
+    - {click: "z", label: "zi", swipe_right: "i", long_click: "@"}
     - {click: BackSpace, long_click: Escape}
 
     - {click: "p", label: "pv", swipe_right: "v", long_click: "2"}
     - {click: "t", label: "tu", swipe_right: "u", long_click: "5"}
-    - {click: "k", label: "km", swipe_right: "m", long_click: ""}
-    - {click: "c", label: "cp", swipe_right: "p", long_click: "8"}
+    - {click: "k", label: "km", swipe_right: "m", long_click: "8"}
+    - {click: "c", label: "cp", swipe_right: "p", long_click: "~"}
     - {click: Keyboard_symbols, long_click: Keyboard_number}
 
     - {click: "m", label: "me", swipe_right: "e", long_click: "3"}
     - {click: "n", label: "nr", swipe_right: "r", long_click: "6"}
-    - {click: "q", label: "qn", swipe_right: "n", long_click: "j"}
-    - {click: "s", label: "st", swipe_right: "t", long_click: "9"}
+    - {click: "q", label: "qn", swipe_right: "n", long_click: "9"}
+    - {click: "s", label: "st", swipe_right: "t", long_click: "j"}
     - {click: Return, long_click: CommitComment}
 
     - {click: "f", label: "fi", swipe_right: "i", long_click: "(){Left}"}
