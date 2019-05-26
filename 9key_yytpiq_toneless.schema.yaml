@@ -4,7 +4,7 @@
 schema:
   schema_id: 9key_yytpiq_toneless
   name: "9鍵三橛粵拼（無聲調）"
-  version: "1.0.0"
+  version: "1.0.1"
   author:
     - 基於 jyutping (https://github.com/rime/rime-jyutping)
 
@@ -44,7 +44,7 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: '123456789abcdefghijklmnopqrstuvwxyz'
+  alphabet: '1234567890abcdefghijklmnopqrstuvwxyz'
   delimiter: " 1"
   algebra:
     - xform ng q
