@@ -4,7 +4,7 @@
 schema:
   schema_id: 16key_yytpiq_toneless
   name: "16鍵三橛粵拼（無聲調）"
-  version: "3.1.1"
+  version: "3.1.2"
   author:
     - 基於 jyutping (https://github.com/rime/rime-jyutping)
   description:
@@ -118,11 +118,20 @@ translator:
     - xform/^/ /
     - xlit abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
+    - xform/B(?=[GKQHZPSY])/a/
+    - xform/P(?=[GKQHZPSY])/v/
+    - xform/M(?=[GKQHZPSY])/e/
+    - xform/F(?=[GKQHZPSY])/i/
+    - xform/D(?=[GKQHZPSY])/o/ # "DG" "oG" ("ou")
+    - xform/T(?=[GKQHZPSY])/u/
+    - xform/N(?=[GKQHZPSY])/r/
+    - xform/L(?=[GKQHZPSY])/y/
+
     - xform/(?<=[ '])B/b/
     - xform/(?<=[ '])P/p/
     - xform/(?<=[ '])M/m/
     - xform/(?<=[ '])F/f/
-    - xform/(?<=[ '])D/d/ # " DDH" " dDH"
+    - xform/(?<=[ '])D/d/ # " DDG" " dDG" (" dDq" " doq")
     - xform/(?<=[ '])T/t/
     - xform/(?<=[ '])N/n/
     - xform/(?<=[ '])L/l/
@@ -141,7 +150,7 @@ translator:
     - xform G u
     - xform K m
     - xform Q n
-    - xform H q # " DDH" " dDH" " dDq"
+    - xform H q
     - xform Z i
     - xform C p
     - xform S t
@@ -151,7 +160,7 @@ translator:
     - xform P v
     - xform M e
     - xform F i
-    - xform D o # " DDH" " dDH" "dDq" " doq"
+    - xform D o
     - xform T u
     - xform N r
     - xform L y
