@@ -4,7 +4,7 @@
 schema:
   schema_id: 9key_yytpiq_toneless
   name: "9鍵三橛粵拼（無聲調）"
-  version: "1.0.1"
+  version: "1.1.0"
   author:
     - 基於 jyutping (https://github.com/rime/rime-jyutping)
 
@@ -123,6 +123,12 @@ reverse_lookup:
 
 punctuator:
   import_preset: default
+
+key_binder:
+  # enable paging with -=
+  bindings:
+    __patch:
+      - key_bindings:/paging_with_minus_equal
 
 recognizer:
   import_preset: default
