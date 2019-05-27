@@ -4,7 +4,7 @@
 schema:
   schema_id: 16key_yytpiq_toneless
   name: "16鍵三橛粵拼（無聲調）"
-  version: "3.1.2"
+  version: "3.1.3"
   author:
     - 基於 jyutping (https://github.com/rime/rime-jyutping)
   description:
@@ -118,14 +118,14 @@ translator:
     - xform/^/ /
     - xlit abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
-    - xform/B(?=[GKQHZPSY])/a/
-    - xform/P(?=[GKQHZPSY])/v/
-    - xform/M(?=[GKQHZPSY])/e/
-    - xform/F(?=[GKQHZPSY])/i/
-    - xform/D(?=[GKQHZPSY])/o/ # "DG" "oG" ("ou")
-    - xform/T(?=[GKQHZPSY])/u/
-    - xform/N(?=[GKQHZPSY])/r/
-    - xform/L(?=[GKQHZPSY])/y/
+    - xform/B(?=[GKQHZCSY])/a/
+    - xform/P(?=[GKQHZCSY])/v/
+    - xform/M(?=[GKQHZCSY])/e/
+    - xform/F(?=[GKQHZCSY])/i/
+    - xform/D(?=[GKQHZCSY])/o/ # "DG" "oG" ("ou")
+    - xform/T(?=[GKQHZCSY])/u/
+    - xform/N(?=[GKQHZCSY])/r/
+    - xform/L(?=[GKQHZCSY])/y/
 
     - xform/(?<=[ '])B/b/
     - xform/(?<=[ '])P/p/
