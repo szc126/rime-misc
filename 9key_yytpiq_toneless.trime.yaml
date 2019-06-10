@@ -1,3 +1,0 @@
-preset_keyboards:
-  9key_yytpiq_toneless:
-    __include: 9key_terra_pinyin.trime:/preset_keyboards/9key_terra_pinyin

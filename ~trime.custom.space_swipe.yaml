@@ -1,9 +1,0 @@
-# swipe on space to move cursor
-"preset_keyboards/default/keys/@43":
-  {click: space, swipe_left: Left, swipe_right: Right, width: 30}
-
-"preset_keyboards/qwerty/keys/@33":
-  {click: space, swipe_left: Left, swipe_right: Right, width: 30}
-
-"preset_keyboards/symbols/keys/@42":
-  {click: space, swipe_left: Left, swipe_right: Right, width: 40}
