@@ -1,0 +1,48 @@
+preset_keyboards:
+  qyeyshanglr_hanja:
+    name: "옛한글・漢字"
+    version: "2.1.1"
+    ascii_mode: 0
+    width: 12.5
+    height: 44
+    keys:
+    - {click: "g", label: "ㄱ"}
+    - {click: "k", label: "ㅋ"}
+    - {click: ";", label: "ㆁ"}
+    - {click: "l", label: "ㅡ", swipe_right: "ly"}
+    - {click: "i", label: "ㅣ"}
+    - {click: "d", label: "ㄷ"}
+    - {click: "t", label: "ㅌ"}
+    - {click: "n", label: "ㄴ"}
+
+    - {click: "b", label: "ㅂ"}
+    - {click: "p", label: "ㅍ"}
+    - {click: "m", label: "ㅁ"}
+    - {click: "o", label: "ㅗ", long_click: "yo", swipe_right: "oy"}
+    - {click: "a", label: "ㅏ", long_click: "ya", swipe_right: "ay", swipe_left: "yay"}
+    - {click: "j", label: "ㅈ"}
+    - {click: "c", label: "ㅊ"}
+    - {click: "s", label: "ㅅ"}
+
+    - {click: "x", label: "ㆆ"}
+    - {click: "h", label: "ㅎ"}
+    - {click: "q", label: "ㅇ"}
+    - {click: "u", label: "ㅜ", long_click: "yu", swipe_right: "uy"}
+    - {click: "e", label: "ㅓ", long_click: "ye", swipe_right: "ey", swipe_left: "yey"}
+    - {click: "r", label: "ㄹ"}
+    - {click: "z", label: "ㅿ"}
+    - {click: "v", label: "ㅸ"}
+
+    - {click: "8", long_click: "9"}
+    - {click: "1", long_click: "2"}
+    - {click: "f", label: "ㆍ", swipe_right: "fy"}
+    - {click: "w", label: "w"}
+    - {click: "y", label: "y"}
+    - {click: BackSpace, long_click: Escape}
+    - {click: ",", long_click: "?", swipe_left: "\\"}
+    - {click: ".", long_click: "!", swipe_left: "……"}
+
+    - {click: Mode_switch, long_click: Menu, width: 18.75}
+    - {click: Keyboard_symbols, long_click: Keyboard_number, width: 18.75}
+    - {click: space, long_click: "'", swipe_left: Left, swipe_right: Right, width: 25}
+    - {click: CommitScriptText, long_click: Return, width: 37.5}

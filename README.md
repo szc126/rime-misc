@@ -43,15 +43,12 @@
     * OR [`luna_pinyin.dict.yaml`](https://github.com/rime/rime-luna-pinyin)（要自己修改）。
 * 私人用……第啲都已經 upload 嗮
 
-## `~trime-keyboards.yaml`
+## TRIME 鍵盤
+
 * depends:
   * [TRIME](https://github.com/osfans/trime)。
-* 內容要複製到 `trime.custom.yaml`。
 * 可以 swipe 空格鍵移動光標。`空格`+`swipe left / swipe right`→`move left / move right`。
 * `, / .` + 往空格鍵 swipe→`、 / ……`
-* 鍵盤補丁：
-  * `preset_keyboards/default`：改變 `Shift` `符號` `中文` 的排序爲 `中文` `符號` `Shift`
-  * `a` 鍵難 swipe left，加 `空格`+`swipe left / swipe right`
 
 ### `9key_terra_pinyin` 9鍵地球拼音
 * depends:
@@ -84,3 +81,9 @@
   * [`stroke.schema.yaml`](https://github.com/rime/rime-stroke)。
 * 略改內裝的，沒有什麼特別
 * <details><summary>📷</summary><img alt="五筆畫" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-stroke-1_0_0.png" /></details>
+
+## TRIME 鍵盤 &middot; 雜補
+
+### `rearrange_default`
+
+### `space_swipe`
