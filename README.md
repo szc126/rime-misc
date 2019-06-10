@@ -48,12 +48,13 @@
   * [TRIME](https://github.com/osfans/trime)。
 * 可以 swipe 空格鍵移動光標。`空格`+`swipe left / swipe right`→`move left / move right`。
 * `, / .` + 往空格鍵 swipe→`、 / ……`.
-* `
+
+```
 patch:
   __include: qyeyshanglr_hanja.trime:/
   __include: ~trime.custom.space_swipe:/
-`
-  * ([https://github.com/rime/home/wiki/Configuration](Configuration &middot; rime/home Wiki))
+```
+* ([Configuration &middot; rime/home Wiki](https://github.com/rime/home/wiki/Configuration))
 
 
 ### `9key_terra_pinyin` 9鍵地球拼音
