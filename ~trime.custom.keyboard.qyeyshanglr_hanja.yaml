@@ -1,6 +1,6 @@
 "preset_keyboards/qyeyshanglr_hanja":
   name: "옛한글・漢字"
-  version: "2.1.1"
+  version: "3.0.0"
   ascii_mode: 0
   width: 12.5
   height: 44
@@ -37,7 +37,7 @@
   - {click: "f", label: "ㆍ", swipe_right: "fy"}
   - {click: "w", label: "w"}
   - {click: "y", label: "y"}
-  - {click: BackSpace, long_click: Escape}
+  - {click: BackSpace}
   - {click: ",", long_click: "?", swipe_left: "\\"}
   - {click: ".", long_click: "!", swipe_left: "……"}
 

@@ -1,6 +1,6 @@
 "preset_keyboards/16key_yytpiq_toneless":
   name: "16鍵三橛粵拼（無聲調）"
-  version: "5.0.2"
+  version: "6.0.0"
   ascii_mode: 0
   width: 20
   height: 44
@@ -9,7 +9,7 @@
   - {click: "d", label: "do", swipe_right: "o", long_click: "4"}
   - {click: "g", label: "gu", swipe_right: "u", long_click: "7"}
   - {click: "z", label: "zi", swipe_right: "i", long_click: "@"}
-  - {click: BackSpace, long_click: Escape}
+  - {click: BackSpace}
 
   - {click: "p", label: "pv", swipe_right: "v", long_click: "2"}
   - {click: "t", label: "tu", swipe_right: "u", long_click: "5"}
