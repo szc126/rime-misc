@@ -4,7 +4,7 @@
 schema:
   schema_id: 16key_yytpiq_toneless
   name: "16鍵三橛粵拼（無聲調）"
-  version: "3.1.5"
+  version: "3.1.4"
   author:
     - 基於 jyutping (https://github.com/rime/rime-jyutping)
   description:
@@ -86,14 +86,14 @@ speller:
     - xform/^y/Y/ # yi Yi, yy Yy
     - xform/w/W/
 
-    - xform/(?<=[aveioury])u$/G/
-    - xform/(?<=[aveiouryh])m$/K/
-    - xform/(?<=[aveioury])n$/Q/
-    - xform/(?<=[aveiouryh])q$/H/
-    - xform/(?<=[aveioury])i$/Z/ # yi Yi Yi, yy Yy Yy
-    - xform/(?<=[aveioury])p$/C/
-    - xform/(?<=[aveioury])t$/S/
-    - xform/(?<=[aveioury])k$/Y/
+    - xform/([aveioury])u$/$1G/
+    - xform/([aveiouryh])m$/$1K/
+    - xform/([aveioury])n$/$1Q/
+    - xform/([aveiouryh])q$/$1H/
+    - xform/([aveioury])i$/$1Z/ # yi Yi Yi, yy Yy Yy
+    - xform/([aveioury])p$/$1C/
+    - xform/([aveioury])t$/$1S/
+    - xform/([aveioury])k$/$1Y/
 
     - xform a B
     - xform v P
@@ -126,22 +126,22 @@ translator:
     - xform/N(?=[GKQHZCSY])/r/
     - xform/L(?=[GKQHZCSY])/y/
 
-    - xform/(?<=^|[ '])B/b/
-    - xform/(?<=^|[ '])P/p/
-    - xform/(?<=^|[ '])M/m/
-    - xform/(?<=^|[ '])F/f/
-    - xform/(?<=^|[ '])D/d/ # " DDG" " dDG" (" dDq" " doq")
-    - xform/(?<=^|[ '])T/t/
-    - xform/(?<=^|[ '])N/n/
-    - xform/(?<=^|[ '])L/l/
-    - xform/(?<=^|[ '])G/g/
-    - xform/(?<=^|[ '])K/k/
-    - xform/(?<=^|[ '])Q/q/
-    - xform/(?<=^|[ '])H/h/
-    - xform/(?<=^|[ '])Z/z/
-    - xform/(?<=^|[ '])C/c/
-    - xform/(?<=^|[ '])S/s/
-    - xform/(?<=^|[ '])Y/y/
+    - xform/(^|[ '])B/$1b/
+    - xform/(^|[ '])P/$1p/
+    - xform/(^|[ '])M/$1m/
+    - xform/(^|[ '])F/$1f/
+    - xform/(^|[ '])D/$1d/ # " DDG" " dDG" (" dDq" " doq")
+    - xform/(^|[ '])T/$1t/
+    - xform/(^|[ '])N/$1n/
+    - xform/(^|[ '])L/$1l/
+    - xform/(^|[ '])G/$1g/
+    - xform/(^|[ '])K/$1k/
+    - xform/(^|[ '])Q/$1q/
+    - xform/(^|[ '])H/$1h/
+    - xform/(^|[ '])Z/$1z/
+    - xform/(^|[ '])C/$1c/
+    - xform/(^|[ '])S/$1s/
+    - xform/(^|[ '])Y/$1y/
     - xform gG gw
     - xform kK kw
     - xform yY w
