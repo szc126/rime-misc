@@ -89,6 +89,8 @@ patch:
 
 ## TRIME keyboards: patches
 
+### `number_controls`
+
 ### `rearrange_default`
 
 ### `space_swipe`
