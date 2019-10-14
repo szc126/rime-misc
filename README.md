@@ -15,7 +15,7 @@
 * depends:
   * [`jyutping.dict.yaml`](https://github.com/rime/rime-jyutping).
 * recommends:
-  * [TRIME](https://github.com/osfans/trime)。
+  * [TRIME](https://github.com/osfans/trime).
   * `preset_keyboards/9key_yytpiq_toneless` (this repo).
   * `9key_terra_pinyin.schema.yaml` (拼音 reverse lookup) (this repo).
 
@@ -29,7 +29,7 @@
 
 ### `dictgen_9key_stroke` （9鍵反查用）五筆畫
 * depends:
-  * [`stroke.dict.yaml`](https://github.com/rime/rime-stroke)。
+  * [`stroke.dict.yaml`](https://github.com/rime/rime-stroke).
 * recommends:
   * `9key_terra_pinyin.schema.yaml` (this repo).
 * You must deploy it, in order to create the Prism.
@@ -58,7 +58,7 @@ patch:
 ### `9key_terra_pinyin` 9鍵地球拼音
 * depends:
   * `9key_terra_pinyin.schema.yaml` (this repo).
-* `PQRS`+`swipe left / swipe up / swipe down / swipe right`→`p / q / r / s`。
+* `PQRS`+`swipe left / swipe up / swipe down / swipe right`→`p / q / r / s`.
   * You can use this to type 全拼, or mixed 全拼-T9. `5u\`=`lù`.
 * <code>&#96;45678'</code>→`一丨丿丶乙` (五筆畫 reverse lookup).
 * <details><summary>📷</summary><img alt="9鍵地球拼音" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_terra_pinyin-1_0_0.png" /><img alt="9鍵地球拼音" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_terra_pinyin-1_0_0-stroke.png" /></details>
@@ -75,15 +75,15 @@ patch:
 
 ### `qyeyshanglr_hanja` 옛한글・漢字
 * depends:
-  * [`qyeyshanglr_hanja.schema.yaml`](https://github.com/biopolyhedron/rime-qyeyshanglr-hanja)。
-* `a`+`swipe right`→`ay`。
-* `a`+`long click`→`ya`。
-  * `a`+`swipe left`→`yay`。
+  * [`qyeyshanglr_hanja.schema.yaml`](https://github.com/biopolyhedron/rime-qyeyshanglr-hanja).
+* `a`+`swipe right`→`ay`.
+* `a`+`long click`→`ya`.
+  * `a`+`swipe left`→`yay`.
 * <details><summary>📷</summary><img alt="옛한글・漢字" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-qyeyshanglr_hanja-1_0_0.png" /></details>
 
 ### `stroke` 五筆畫
 * depends:
-  * [`stroke.schema.yaml`](https://github.com/rime/rime-stroke)。
+  * [`stroke.schema.yaml`](https://github.com/rime/rime-stroke).
 * 改悪・私的用。
 * <details><summary>📷</summary><img alt="五筆畫" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-stroke-1_0_0.png" /></details>
 
