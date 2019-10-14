@@ -1,0 +1,34 @@
+# add extra controls to `number`
+
+# copy paste
+"preset_keyboards/number/keys/@0/+":
+  long_click: select_all
+
+"preset_keyboards/number/keys/@5/+":
+  long_click: cut
+
+"preset_keyboards/number/keys/@10/+":
+  long_click: copy
+
+"preset_keyboards/number/keys/@15/+":
+  long_click: paste
+
+# up down
+"preset_keyboards/number/keys/@2/+":
+  long_click: Up
+
+"preset_keyboards/number/keys/@6/+":
+  long_click: Left
+
+"preset_keyboards/number/keys/@8/+":
+  long_click: Right
+
+"preset_keyboards/number/keys/@12/+":
+  long_click: Down
+
+# home end
+"preset_keyboards/number/keys/@4/+":
+  long_click: Home
+
+"preset_keyboards/number/keys/@9/+":
+  long_click: End
