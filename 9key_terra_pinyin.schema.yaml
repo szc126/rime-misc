@@ -4,7 +4,7 @@
 schema:
   schema_id: 9key_terra_pinyin
   name: "9鍵地球拼音"
-  version: "1.2.0"
+  version: "2.0.0"
   author:
     - 基於 terra_pinyin (https://github.com/rime/rime-terra-pinyin)
 
@@ -44,15 +44,22 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: '23456789abcdefghijklmnopqrstuvwxyz;/,\'
+  alphabet: '23456789abcdefghijklmnopqrstuvwxyz~@'
   initials: '23456789abcdefghijklmnopqrstuvwxyz'
-  delimiter: " 1"
+  delimiter: " '"
   algebra:
     - xform/^r5$/er5/
     - derive/^([a-z]+)[0-5]$/$1/
     - 'erase/^.*5$/'
-    - 'xlit 1234 ;/,\'
     - abbrev/^([a-z]).+$/$1/
+
+    - abbrev/^([a-z]).+([0-5])$/$1$2/
+
+    - xform 1 ~
+    - xform 2 ~~
+    - xform 3 @
+    - xform 4 @@
+
     - fuzz a 2
     - fuzz b 2
     - fuzz c 2
@@ -85,7 +92,10 @@ translator:
   prism: 9key_terra_pinyin
   spelling_hints: 5  # ～字以內候選標註完整帶調拼音
   preedit_format:
-    - xform 1 '
+    - xform @@ ˋ
+    - xform @ ˇ
+    - xform ~~ ˊ
+    - xform ~ ˉ
   comment_format:
     - xform ([aeiou])(ng?|r)([1234]) $1$3$2
     - xform ([aeo])([iuo])([1234]) $1$3$2
@@ -139,7 +149,7 @@ reverse_lookup:
     - xform e3 ě
     - xform e4 è
     - xform o1 ō
-    - xform o2 ó`
+    - xform o2 ó
     - xform o3 ǒ
     - xform o4 ò
     - xform i1 ī
@@ -162,12 +172,12 @@ punctuator:
   import_preset: default
 
 key_binder:
-  # enable paging with -=
+  # enable paging with ,.
   bindings:
-    __patch:
-      - key_bindings:/paging_with_minus_equal
+    - { when: paging, accept: comma, send: Page_Up }
+    - { when: has_menu, accept: period, send: Page_Down }
 
 recognizer:
   import_preset: default
   patterns:
-    reverse_lookup: "`[145678]*'?$"
+    reverse_lookup: "`[45678]*'?$"
