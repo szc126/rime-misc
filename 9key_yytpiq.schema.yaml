@@ -2,9 +2,9 @@
 # encoding: utf-8
 
 schema:
-  schema_id: 9key_yytpiq_toneless
-  name: "9鍵三橛粵拼（無聲調）"
-  version: "1.2.0"
+  schema_id: 9key_yytpiq
+  name: "9鍵三橛粵拼"
+  version: "2.0.0"
   author:
     - 基於 jyutping (https://github.com/rime/rime-jyutping)
 
@@ -44,8 +44,9 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: '23456789abcdefghijklmnopqrstuvwxyz'
-  delimiter: " 1"
+  alphabet: '23456789abcdefghijklmnopqrstuvwxyz"~@'
+  initials: '23456789abcdefghijklmnopqrstuvwxyz'
+  delimiter: " '"
   algebra:
     - xform ng q
     - xform j Y
@@ -56,8 +57,18 @@ speller:
     - xform aa A
     - xform a v
     - xlit YA ya
-    - abbrev/^([a-z]).+$/$1/
-    - abbrev/^([gk]w).+$/$1/
+    - abbrev/^([a-z]w?).*$/$1/
+    - abbrev/^([a-z]w?).*([1-6])$/$1$2/
+
+    - derive/^(.+)[1-6]$/$1/
+
+    - 'xform 1 "'
+    - xform 2 ~
+    - xform 3 @
+    - 'xform 4 ""'
+    - xform 5 ~~
+    - xform 6 @@
+
     - fuzz a 2
     - fuzz b 2
     - fuzz c 2
@@ -86,11 +97,16 @@ speller:
     - fuzz z 9
 
 translator:
-  dictionary: jyutping
-  prism: 9key_yytpiq_toneless
+  dictionary: jyut6ping3
+  prism: 9key_yytpiq
   spelling_hints: 10
   preedit_format:
-    - xform 1 '
+    - xform @@ ⁶
+    - xform ~~ ⁵
+    - 'xform "" ⁴'
+    - xform @ ³
+    - xform ~ ²
+    - 'xform " ¹'
   comment_format:
     - xform ng q
     - xform j Y
@@ -127,10 +143,10 @@ punctuator:
   import_preset: default
 
 key_binder:
-  # enable paging with -=
+  # enable paging with ,.
   bindings:
-    __patch:
-      - key_bindings:/paging_with_minus_equal
+    - { when: paging, accept: comma, send: Page_Up }
+    - { when: has_menu, accept: period, send: Page_Down }
 
 recognizer:
   import_preset: default
