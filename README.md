@@ -11,20 +11,20 @@
   * `preset_keyboards/9key_terra_pinyin` (this repo).
   * `dictgen_9key_stroke.schema.yaml` (五筆畫 reverse lookup) (this repo).
 
-### `9key_yytpiq_toneless` 9鍵三橛粵拼（無聲調）
+### `9key_yytpiq` 9鍵三橛粵拼
 * depends:
-  * [`jyutping.dict.yaml`](https://github.com/rime/rime-jyutping).
+  * [`jyut6ping3.dict.yaml`](https://github.com/sgalal/rime-cantonese).
 * recommends:
   * [TRIME](https://github.com/osfans/trime).
-  * `preset_keyboards/9key_yytpiq_toneless` (this repo).
+  * `preset_keyboards/9key_yytpiq` (this repo).
   * `9key_terra_pinyin.schema.yaml` (拼音 reverse lookup) (this repo).
 
-### `16key_yytpiq_toneless` 16鍵三橛粵拼（無聲調）
+### `16key_yytpiq` 16鍵三橛粵拼
 * depends:
-  * [`jyutping.dict.yaml`](https://github.com/rime/rime-jyutping).
+  * [`jyut6ping3.dict.yaml`](https://github.com/sgalal/rime-cantonese).
 * recommends:
   * [TRIME](https://github.com/osfans/trime).
-  * `preset_keyboards/16key_yytpiq_toneless` (this repo).
+  * `preset_keyboards/16key_yytpiq` (this repo).
   * `9key_terra_pinyin.schema.yaml` (拼音反查) (this repo).
 
 ### `dictgen_9key_stroke` （9鍵反查用）五筆畫
@@ -34,9 +34,9 @@
   * `9key_terra_pinyin.schema.yaml` (this repo).
 * You must deploy it, in order to create the Prism.
 
-### `yytpiq_toneless` 三橛粵拼（無聲調）
+### `yytpiq` 三橛粵拼
 * depends:
-  * [`jyutping.dict.yaml`](https://github.com/rime/rime-jyutping).
+  * [`jyut6ping3.dict.yaml`](https://github.com/sgalal/rime-cantonese).
 * recommends:
   * [`terra_pinyin.dict.yaml`](https://github.com/rime/rime-terra-pinyin) (拼音 reverse lookup).
     * or [`luna_pinyin.dict.yaml`](https://github.com/rime/rime-luna-pinyin) (you must change this yourself).
@@ -63,15 +63,15 @@ patch:
 * <code>&#96;45678'</code>→`一丨丿丶乙` (五筆畫 reverse lookup).
 * <details><summary>📷</summary><img alt="9鍵地球拼音" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_terra_pinyin-1_0_0.png" /><img alt="9鍵地球拼音" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_terra_pinyin-1_0_0-stroke.png" /></details>
 
-### `9key_yytpiq_toneless` 9鍵三橛粵拼（無聲調）
+### `9key_yytpiq` 9鍵三橛粵拼
 * depends:
-  * `9key_yytpiq_toneless.schema.yaml` (this repo).
-* <details><summary>📷</summary><img alt="9鍵三橛粵拼（無聲調）" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_yytpiq_toneless-1_0_0.png" /><img alt="9鍵三橛粵拼（無聲調）" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_yytpiq_toneless-1_0_0-pinyin.png" /></details>
+  * `9key_yytpiq.schema.yaml` (this repo).
+* <details><summary>📷</summary><img alt="9鍵三橛粵拼" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_yytpiq-1_0_0.png" /><img alt="9鍵三橛粵拼" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_yytpiq-1_0_0-pinyin.png" /></details>
 
-### `16key_yytpiq_toneless` 16鍵三橛粵拼（無聲調）
+### `16key_yytpiq` 16鍵三橛粵拼
 * depends:
-  * `16key_yytpiq_toneless.schema.yaml` (this repo).
-* <details><summary>📷</summary><img alt="16鍵三橛粵拼（無聲調）" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-16key_yytpiq_toneless-2_0_0.png" /></details>
+  * `16key_yytpiq.schema.yaml` (this repo).
+* <details><summary>📷</summary><img alt="16鍵三橛粵拼" src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-16key_yytpiq-2_0_0.png" /></details>
 
 ### `qyeyshanglr_hanja` 옛한글・漢字
 * depends:
