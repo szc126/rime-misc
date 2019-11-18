@@ -4,7 +4,7 @@
 schema:
   schema_id: 9key_yytpiq
   name: "9鍵三橛粵拼"
-  version: "2.0.0"
+  version: "2.0.1"
   author:
     - 基於 jyutping (https://github.com/rime/rime-jyutping)
 
@@ -59,7 +59,6 @@ speller:
     - xlit YA ya
     - abbrev/^([a-z]w?).*$/$1/
     - abbrev/^([a-z]w?).*([1-6])$/$1$2/
-
     - derive/^(.+)[1-6]$/$1/
 
     - 'xform 1 "'
@@ -118,6 +117,8 @@ translator:
     - xform a v
     - xlit YA ya
 
+    - xlit 123456 ¹²³⁴⁵⁶
+
 reverse_lookup:
   dictionary: terra_pinyin
   prism: 9key_terra_pinyin
@@ -138,6 +139,8 @@ reverse_lookup:
     - xform aa A
     - xform a v
     - xlit YA ya
+
+    - xlit 123456 ¹²³⁴⁵⁶
 
 punctuator:
   import_preset: default
