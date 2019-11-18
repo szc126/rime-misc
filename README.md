@@ -14,6 +14,7 @@
 ### `9key_yytpiq` 9鍵三橛粵拼
 * depends:
   * [`jyut6ping3.dict.yaml`](https://github.com/sgalal/rime-cantonese).
+    * or [`jyutping.dict.yaml`](https://github.com/rime/rime-jyutping).
 * recommends:
   * [TRIME](https://github.com/osfans/trime).
   * `preset_keyboards/9key_yytpiq` (this repo).
@@ -22,6 +23,7 @@
 ### `16key_yytpiq` 16鍵三橛粵拼
 * depends:
   * [`jyut6ping3.dict.yaml`](https://github.com/sgalal/rime-cantonese).
+    * or [`jyutping.dict.yaml`](https://github.com/rime/rime-jyutping).
 * recommends:
   * [TRIME](https://github.com/osfans/trime).
   * `preset_keyboards/16key_yytpiq` (this repo).
@@ -37,9 +39,10 @@
 ### `yytpiq` 三橛粵拼
 * depends:
   * [`jyut6ping3.dict.yaml`](https://github.com/sgalal/rime-cantonese).
+    * or [`jyutping.dict.yaml`](https://github.com/rime/rime-jyutping).
 * recommends:
   * [`terra_pinyin.dict.yaml`](https://github.com/rime/rime-terra-pinyin) (拼音 reverse lookup).
-    * or [`luna_pinyin.dict.yaml`](https://github.com/rime/rime-luna-pinyin) (you must change this yourself).
+    * or [`luna_pinyin.dict.yaml`](https://github.com/rime/rime-luna-pinyin).
 * my personal shit
 
 ## TRIME keyboards
