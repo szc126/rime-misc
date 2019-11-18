@@ -1,0 +1,38 @@
+"preset_keyboards/16key_yytpiq":
+  name: "16鍵三橛粵拼"
+  version: "7.0.0"
+  ascii_mode: 0
+  width: 20
+  height: 44
+  key_text_offset_x: 0
+  key_hint_offset_x: 13
+  key_hint_offset_y: -6
+  keys:
+  - {click: "b", swipe_right: "a", hint: "a", long_click: "~"}
+  - {click: "d", swipe_right: "o", hint: "o", long_click: "/"}
+  - {click: "g", swipe_right: "1", hint: "u ¹", long_click: ""}
+  - {click: "z", swipe_right: "4", hint: "i ⁴", long_click: ""}
+  - {click: BackSpace}
+
+  - {click: "p", swipe_right: "v", hint: "v", long_click: "@"}
+  - {click: "t", swipe_right: "u", hint: "u", long_click: ""}
+  - {click: "k", swipe_right: "2", hint: "m ²", long_click: ""}
+  - {click: "c", swipe_right: "5", hint: "p ⁵", long_click: ""}
+  - {click: Keyboard_symbols, long_click: Keyboard_number}
+
+  - {click: "m", swipe_right: "e", hint: "e", long_click: ":"}
+  - {click: "n", swipe_right: "r", hint: "r", long_click: ""}
+  - {click: "q", swipe_right: "3", hint: "n ³", long_click: ""}
+  - {click: "s", swipe_right: "6", hint: "t ⁶", long_click: "j"}
+  - {click: Return, long_click: CommitComment}
+
+  - {click: "f", swipe_right: "i", hint: "i", long_click: ";"}
+  - {click: "l", hint: "y", long_click: "(){Left}", swipe_left: "(", swipe_right: ")"}
+  - {click: "h", swipe_right: "", hint: "q", long_click: "x"}
+  - {click: "y", swipe_right: "", hint: "k", long_click: "w"}
+  - {click: "'", long_click: '"'}
+
+  - {click: Mode_switch, long_click: Menu}
+  - {click: ",", long_click: "?", swipe_right: "\\"}
+  - {click: space, long_click: "`", swipe_left: Left, swipe_right: Right, width: 40}
+  - {click: ".", long_click: "!", swipe_left: "^"}
