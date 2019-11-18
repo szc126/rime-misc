@@ -52,7 +52,6 @@ speller:
     - derive/^([a-z]+)[0-5]$/$1/
     - 'erase/^.*5$/'
     - abbrev/^([a-z]).+$/$1/
-
     - abbrev/^([a-z]).+([0-5])$/$1$2/
 
     - xform 1 ~
