@@ -4,7 +4,7 @@
 schema:
   schema_id: yytpiq
   name: "三橛粵拼"
-  version: "2.0.0"
+  version: "2.0.1"
   author:
     - 基於 jyutping (https://github.com/rime/rime-jyutping)
 
@@ -64,9 +64,9 @@ speller:
     - xform 1 x
     - xform 2 r
     - xform 3 xx
-    - xform 4 j
+    - xform 4 jj
     - xform 5 rr
-    - xform 6 jj
+    - xform 6 j
 
 translator:
   dictionary: jyut6ping3
