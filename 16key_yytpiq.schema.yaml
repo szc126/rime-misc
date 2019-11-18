@@ -2,15 +2,15 @@
 # encoding: utf-8
 
 schema:
-  schema_id: 16key_yytpiq_toneless
-  name: "16鍵三橛粵拼（無聲調）"
-  version: "3.1.4"
+  schema_id: 16key_yytpiq
+  name: "16鍵三橛粵拼"
+  version: "4.0.0"
   author:
     - 基於 jyutping (https://github.com/rime/rime-jyutping)
   description:
-    - ba do gu zi    bdgz ao ui
-    - pv tu km cp    ptkc vu mp
-    - me nr qn st    mnqs er nt
+    - ba do gu zi    bdgz ao ui 13
+    - pv tu km cp    ptkc vu mp 45
+    - me nr qn st    mnqs er nt 36
     - fi ly hq yk    flhy iy qk
     -
     - g-gw k-kw (c-j) (s-x) y-w
@@ -51,7 +51,7 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: '1234567890abcdefghijklmnopqrstuvwxyz'
+  alphabet: '123456abcdefghijklmnopqrstuvwxyz'
   delimiter: " '"
   algebra:
     - xform ng q
@@ -63,10 +63,11 @@ speller:
     - xform aa A
     - xform a v
     - xlit YA ya
-    - abbrev/^([a-z]).+$/$1/
-    - abbrev/^([gk]w).+$/$1/
+    - abbrev/^([a-z]w?).*$/$1/
+    - abbrev/^([a-z]w?).*([1-6])$/$1$2/
+    - derive/^(.+)[1-6]$/$1/
 
-    - xform/ue$/uu/ # -ue -uu
+    - xform/ue([1-6]?)$/uu$1/ # -ue -uu
 
     - xform/^b/B/
     - xform/^p/P/
@@ -86,14 +87,14 @@ speller:
     - xform/^y/Y/ # yi Yi, yy Yy
     - xform/w/W/
 
-    - xform/([aveioury])u$/$1G/
-    - xform/([aveiouryh])m$/$1K/
-    - xform/([aveioury])n$/$1Q/
-    - xform/([aveiouryh])q$/$1H/
-    - xform/([aveioury])i$/$1Z/ # yi Yi Yi, yy Yy Yy
-    - xform/([aveioury])p$/$1C/
-    - xform/([aveioury])t$/$1S/
-    - xform/([aveioury])k$/$1Y/
+    - xform/([aveioury])u([1-6]?)$/$1G$2/
+    - xform/([aveiouryH])m([1-6]?)$/$1K$2/
+    - xform/([aveiouryH])n([1-6]?)$/$1Q$2/
+    - xform/([aveiouryH])q([1-6]?)$/$1H$2/
+    - xform/([aveioury])i([1-6]?)$/$1Z$2/ # yi Yi Yi, yy Yy Yy
+    - xform/([aveioury])p([1-6]?)$/$1C$2/
+    - xform/([aveioury])t([1-6]?)$/$1S$2/
+    - xform/([aveioury])k([1-6]?)$/$1Y$2/
 
     - xform a B
     - xform v P
@@ -111,8 +112,8 @@ speller:
     - xlit ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz
 
 translator:
-  dictionary: jyutping
-  prism: 16key_yytpiq_toneless
+  dictionary: jyut6ping3
+  prism: 16key_yytpiq
   spelling_hints: 10
   preedit_format:
     - xlit abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ
@@ -165,6 +166,8 @@ translator:
     - xform L y
 
     - xform uu ue # -ue -uu
+
+    - xlit 123456 ¹²³⁴⁵⁶
   comment_format:
     - xform ng q
     - xform j Y
@@ -175,6 +178,8 @@ translator:
     - xform aa A
     - xform a v
     - xlit YA ya
+
+    - xlit 123456 ¹²³⁴⁵⁶
 
 reverse_lookup:
   dictionary: terra_pinyin
@@ -196,6 +201,8 @@ reverse_lookup:
     - xform aa A
     - xform a v
     - xlit YA ya
+
+    - xlit 123456 ¹²³⁴⁵⁶
 
 punctuator:
   import_preset: default
