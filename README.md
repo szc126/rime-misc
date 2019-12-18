@@ -1,5 +1,6 @@
 # rime-misc
 * 歡迎各位的反饋。
+* screenshots: https://gist.github.com/szc126/826a3b059bf092b12e990c06448e19f8
 
 ## Schemas
 
@@ -64,43 +65,14 @@ patch:
 ### `9key_terra_pinyin` 9鍵地球拼音
 * depends:
   * `9key_terra_pinyin.schema.yaml` (this repo)
-* <details>
-    <summary>📷</summary>
-    <img
-      alt="9鍵地球拼音"
-      src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_terra_pinyin-1_0_0.png"
-    />
-    <img
-      alt="9鍵地球拼音"
-      src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_terra_pinyin-1_0_0-stroke.png"
-    />
-  </details>
 
 ### `9key_yytpiq` 9鍵三橛粵拼
 * depends:
   * `9key_yytpiq.schema.yaml` (this repo)
-* <details>
-    <summary>📷</summary>
-    <img
-      alt="9鍵三橛粵拼"
-      src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_yytpiq-1_0_0.png"
-    />
-    <img
-      alt="9鍵三橛粵拼"
-      src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-9key_yytpiq-1_0_0-pinyin.png"
-    />
-  </details>
 
 ### `16key_yytpiq` 16鍵三橛粵拼
 * depends:
   * `16key_yytpiq.schema.yaml` (this repo)
-* <details>
-    <summary>📷</summary>
-    <img
-      alt="16鍵三橛粵拼"
-      src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-16key_yytpiq-2_0_0.png"
-    />
-  </details>
 
 ### `qyeyshanglr_hanja` 옛한글・漢字
 * depends:
@@ -110,13 +82,6 @@ patch:
     * `a`+`long click`→`ya`
       * `a`+`swipe left`→`yay`
     * `a`+`swipe right`→`ay`
-* <details>
-    <summary>📷</summary>
-    <img
-      alt="옛한글・漢字"
-      src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-qyeyshanglr_hanja-1_0_0.png"
-    />
-  </details>
 
 ### `stroke` 五筆畫
 * depends:
@@ -124,13 +89,6 @@ patch:
 * description:
   * 改悪
   * 私的用
-* <details>
-    <summary>📷</summary>
-    <img
-      alt="五筆畫"
-      src="https://raw.githubusercontent.com/szc126/rime-misc/img/img/trime-stroke-1_0_0.png"
-    />
-  </details>
 
 ## TRIME keyboards: patches
 
