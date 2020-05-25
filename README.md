@@ -52,8 +52,10 @@
 * depends:
   * [TRIME](https://github.com/osfans/trime)
 * description:
-  * `space`+`swipe left`→`move left`. `space`+`swipe right`→`move right`
-  * `,` + swipe towards `space`→`、`. `.` + swipe towards `space`→`……`
+  * `space`+`swipe left`→`move left`
+  * `space`+`swipe right`→`move right`
+  * `,` + swipe towards `space`→`、`
+  * `.` + swipe towards `space`→`……`
 
 ```
 patch:
@@ -88,7 +90,7 @@ patch:
   * [`stroke.schema.yaml`](https://github.com/rime/rime-stroke)
 * description:
   * 改悪
-  * 私的用
+  * 私用
 
 ## TRIME keyboards: patches
 
