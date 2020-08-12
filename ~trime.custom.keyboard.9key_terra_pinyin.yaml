@@ -1,29 +1,29 @@
 "preset_keyboards/9key_terra_pinyin":
   name: "9鍵地球拼音"
-  version: "3.0.0"
+  version: "4.0.0"
   ascii_mode: 0
   width: 20
   height: 55
   keys:
-  - {click: '"', long_click: "/"}
+  - {click: '"', long_click: "{}{Left}", swipe_left: "{", swipe_right: "}"}
   - {click: "'", long_click: "(){Left}", swipe_left: "(", swipe_right: ")"}
-  - {click: "2", label: "ABC", swipe_left: "a", swipe_up: "b", swipe_right: "c", long_click: ""}
-  - {click: "3", label: "DEF", swipe_left: "d", swipe_up: "e", swipe_right: "f", long_click: ""}
+  - {click: "2", label: "ABC", swipe_left: "a", swipe_down: "b", swipe_right: "c", long_click: "/"}
+  - {click: "3", label: "DEF", swipe_left: "d", swipe_down: "e", swipe_right: "f", long_click: ""}
   - {click: BackSpace}
 
-  - {click: "~", long_click: ":", hint: "ˉˊ"}
-  - {click: "4", label: "GHI", hint: "一", swipe_left: "g", swipe_up: "h", swipe_right: "i", long_click: ""}
-  - {click: "5", label: "JKL", hint: "丨", swipe_left: "j", swipe_up: "k", swipe_right: "l", long_click: ""}
-  - {click: "6", label: "MNO", hint: "丿", swipe_left: "m", swipe_up: "n", swipe_right: "o", long_click: ""}
+  - {click: "~", long_click: "[]{Left}", swipe_left: "[", swipe_right: "]", hint: "ˉˊ"}
+  - {click: "4", label: "GHI", hint: "一", swipe_left: "g", swipe_down: "h", swipe_right: "i", long_click: ""}
+  - {click: "5", label: "JKL", hint: "丨", swipe_left: "j", swipe_down: "k", swipe_right: "l", long_click: "="}
+  - {click: "6", label: "MNO", hint: "丿", swipe_left: "m", swipe_down: "n", swipe_right: "o", long_click: ""}
   - {click: Keyboard_symbols, long_click: Keyboard_number}
 
-  - {click: "@", long_click: ";", hint: "ˇˋ"}
-  - {click: "7", label: "PQRS", hint: "丶", swipe_left: "p", swipe_up: "q", swipe_down: "r", swipe_right: "s", long_click: ""}
-  - {click: "8", label: "TUV", hint: "乙", swipe_left: "t", swipe_up: "u", swipe_right: "v", long_click: ""}
-  - {click: "9", label: "WXYZ", swipe_left: "w", swipe_up: "x", swipe_down: "y", swipe_right: "z", long_click: ""}
+  - {click: "@", long_click: "<>{Left}", swipe_left: "<", swipe_right: ">", hint: "ˇˋ"}
+  - {click: "7", label: "PQRS", hint: "丶", swipe_left: "p", swipe_down: "q", swipe_up: "r", swipe_right: "s", long_click: ""}
+  - {click: "8", label: "TUV", hint: "乙", swipe_left: "t", swipe_down: "u", swipe_right: "v", long_click: ":"}
+  - {click: "9", label: "WXYZ", swipe_left: "w", swipe_down: "x", swipe_up: "y", swipe_right: "z", long_click: ""}
   - {click: Return, long_click: CommitComment}
 
   - {click: Menu, long_click: Menu}
-  - {click: ",", long_click: "?", swipe_right: "^"}
+  - {click: ",", long_click: "?", swipe_right: "\\"}
   - {click: space, long_click: "`", swipe_left: Left, swipe_right: Right, width: 40}
-  - {click: ".", long_click: "!"}
+  - {click: ".", long_click: "!", swipe_left: "^"}
