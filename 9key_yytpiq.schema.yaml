@@ -4,9 +4,10 @@
 schema:
   schema_id: 9key_yytpiq
   name: "9鍵三橛粵拼"
-  version: "2.0.1"
+  version: "2.1.0"
   author:
     - 基於 jyutping (https://github.com/rime/rime-jyutping)
+    - 基於 cantonese (https://github.com/rime/rime-cantonese)
 
 switches:
   - name: ascii_mode
@@ -32,16 +33,20 @@ engine:
   segmentors:
     - ascii_segmentor
     - matcher
+    - affix_segmentor@pinyin
+    - affix_segmentor@stroke
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
   translators:
     - punct_translator
     - script_translator
-    - reverse_lookup_translator
+    - script_translator@pinyin
+    - table_translator@stroke
   filters:
     - simplifier
     - uniquifier
+    - reverse_lookup_filter
 
 speller:
   alphabet: '23456789abcdefghijklmnopqrstuvwxyz"~@'
@@ -57,9 +62,15 @@ speller:
     - xform aa A
     - xform a v
     - xlit YA ya
+
+    # abbreviation
     - abbrev/^([a-z]w?).*$/$1/
     - abbrev/^([a-z]w?).*([1-6])$/$1$2/
+
+    # allow toneless
     - derive/^(.+)[1-6]$/$1/
+
+    # ----
 
     - 'xform 1 "'
     - xform 2 ~
@@ -100,12 +111,12 @@ translator:
   prism: 9key_yytpiq
   spelling_hints: 10
   preedit_format:
-    - xform @@ ⁶
-    - xform ~~ ⁵
-    - 'xform "" ⁴'
-    - xform @ ³
-    - xform ~ ²
-    - 'xform " ¹'
+    - xform @@ :6
+    - xform ~~ :5
+    - 'xform "" :4'
+    - xform @ :3
+    - xform ~ :2
+    - 'xform " :1'
   comment_format:
     - xform ng q
     - xform j Y
@@ -116,42 +127,32 @@ translator:
     - xform aa A
     - xform a v
     - xlit YA ya
-
-    - xlit 123456 ¹²³⁴⁵⁶
 
 reverse_lookup:
-  dictionary: terra_pinyin
-  prism: 9key_terra_pinyin
-  prefix: "`"
-  suffix: "'"
-  tips: 〔拼音〕
-  preedit_format:
-    - xform/([nl])v/$1ü/
-    - xform/([nl])ue/$1üe/
-    - xform/([jqxy])v/$1u/
-  comment_format:
-    - xform ng q
-    - xform j Y
-    - xform yu y
-    - xform oe r
-    - xform eoi ue
-    - xform eo u
-    - xform aa A
-    - xform a v
-    - xlit YA ya
+  tags: [ pinyin, stroke ]
+  overwrite_comment: false
+  dictionary: jyut6ping3
 
-    - xlit 123456 ¹²³⁴⁵⁶
+pinyin:
+  tag: pinyin
+  prefix: "`p"
+  suffix: "'"
+  __include: "9key_terra_pinyin.schema:/translator?"
+
+stroke:
+  tag: stroke
+  prefix: "`s"
+  suffix: "'"
+  __include: "dictgen_9key_stroke.schema:/translator?"
 
 punctuator:
   import_preset: default
 
 key_binder:
-  # enable paging with ,.
-  bindings:
-    - { when: paging, accept: comma, send: Page_Up }
-    - { when: has_menu, accept: period, send: Page_Down }
+  import_preset: default
 
 recognizer:
   import_preset: default
   patterns:
-    reverse_lookup: "`[1-9a-z]*'?$"
+    pinyin: "`p[1-9a-z]*'?$"
+    stroke: "`s[1-9]*'?$"
