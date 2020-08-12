@@ -4,9 +4,10 @@
 schema:
   schema_id: yytpiq
   name: "三橛粵拼"
-  version: "2.0.1"
+  version: "2.1.0"
   author:
     - 基於 jyutping (https://github.com/rime/rime-jyutping)
+    - 基於 cantonese (https://github.com/rime/rime-cantonese)
 
 switches:
   - name: ascii_mode
@@ -32,16 +33,20 @@ engine:
   segmentors:
     - ascii_segmentor
     - matcher
+    - affix_segmentor@pinyin
+    - affix_segmentor@stroke
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
   translators:
     - punct_translator
     - script_translator
-    - reverse_lookup_translator
+    - script_translator@pinyin
+    - table_translator@stroke
   filters:
     - simplifier
     - uniquifier
+    - reverse_lookup_filter
 
 speller:
   alphabet: abcdefghijklmnopqrstuvwxyz
@@ -56,11 +61,15 @@ speller:
     - xform aa A
     - xform a v
     - xlit YA ya
+
+    # abbreviation
     - abbrev/^([a-z]w?).*$/$1/
     - abbrev/^([a-z]w?).*([1-6])$/$1$2/
 
+    # allow toneless
     - derive/^(.+)[1-6]$/$1/
 
+    # tone
     - xform 1 x
     - xform 2 r
     - xform 3 xx
@@ -83,38 +92,31 @@ translator:
     - xform a v
     - xlit YA ya
 
-    - xlit 123456 ¹²³⁴⁵⁶
-
 reverse_lookup:
-  dictionary: terra_pinyin
-  prefix: "`"
-  suffix: "'"
-  tips: 〔拼音〕
-  preedit_format:
-    - xform/([nl])v/$1ü/
-    - xform/([nl])ue/$1üe/
-    - xform/([jqxy])v/$1u/
-  comment_format:
-    - xform ng q
-    - xform j Y
-    - xform yu y
-    - xform oe r
-    - xform eoi ue
-    - xform eo u
-    - xform aa A
-    - xform a v
-    - xlit YA ya
+  tags: [ pinyin, stroke ]
+  overwrite_comment: false
+  dictionary: jyut6ping3
 
-    - xlit 123456 ¹²³⁴⁵⁶
+pinyin:
+  tag: pinyin
+  prefix: "P"
+  suffix: "'"
+  __include: "terra_pinyin.schema:/translator?"
+
+stroke:
+  tag: stroke
+  prefix: "S"
+  suffix: "'"
+  __include: "stroke.schema:/translator?"
 
 punctuator:
   import_preset: default
 
 key_binder:
-  # enable paging with .,
   import_preset: default
 
 recognizer:
   import_preset: default
   patterns:
-    reverse_lookup: "`[a-z]*'?$"
+    pinyin: "P[a-z]*'?$"
+    stroke: "S[a-z]*'?$"
