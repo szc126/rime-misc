@@ -1,6 +1,6 @@
 "preset_keyboards/16key_yytpiq":
   name: "16鍵三橛粵拼"
-  version: "8.0.0"
+  version: "8.0.1"
   ascii_mode: 0
   width: 20
   height: 44
@@ -10,26 +10,26 @@
   keys:
   - {click: "b", swipe_right: "a", hint: "a", long_click: "~"}
   - {click: "d", swipe_right: "o", hint: "o", long_click: "/"}
-  - {click: "g", swipe_right: "1", hint: "u ¹", long_click: "{}{Left}", swipe_left: "{", swipe_right: "}"}
+  - {click: "g", swipe_right: "1", hint: "u ¹", long_click: ""}
   - {click: "z", swipe_right: "4", hint: "i ⁴", long_click: "j"}
   - {click: BackSpace}
 
   - {click: "p", swipe_right: "v", hint: "v", long_click: "@"}
   - {click: "t", swipe_right: "u", hint: "u", long_click: ""}
-  - {click: "k", swipe_right: "2", hint: "m ²", long_click: "(){Left}", swipe_left: "(", swipe_right: ")"}
+  - {click: "k", swipe_right: "2", hint: "m ²", long_click: ""}
   - {click: "c", swipe_right: "5", hint: "p ⁵", long_click: "x"}
   - {click: Keyboard_symbols, long_click: Keyboard_number}
 
   - {click: "m", swipe_right: "e", hint: "e", long_click: "="}
   - {click: "n", swipe_right: "r", hint: "r", long_click: ""}
-  - {click: "q", swipe_right: "3", hint: "n ³", long_click: "[]{Left}", swipe_left: "[", swipe_right: "]"}
+  - {click: "q", swipe_right: "3", hint: "n ³", long_click: ""}
   - {click: "s", swipe_right: "6", hint: "t ⁶", long_click: ""}
   - {click: Return, long_click: CommitComment}
 
   - {click: "f", swipe_right: "i", hint: "i", long_click: ":"}
-  - {click: "l", hint: "y", long_click: ""}
-  - {click: "h", swipe_right: "", hint: "q", long_click: "<>{Left}", swipe_left: "<", swipe_right: ">"}
-  - {click: "y", swipe_right: "", hint: "k", long_click: "w"}
+  - {click: "l", hint: "y", long_click: "(){Left}", swipe_left: "(", swipe_right: ")"}
+  - {click: "h", hint: "q", long_click: "[]{Left}", swipe_left: "[", swipe_right: "]"}
+  - {click: "y", hint: "k", long_click: "w"}
   - {click: "'", long_click: '"'}
 
   - {click: Mode_switch, long_click: Menu}
