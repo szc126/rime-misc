@@ -1,0 +1,59 @@
+patch:
+  "speller/algebra":
+    - xform ng q
+    - xform j Y
+    - xform yu y
+    - xform oe r
+    - xform eoi ue
+    - xform eo u
+    - xform aa A
+    - xform a v
+    - xlit YA ya
+
+    # wildcard tone by duplicating the last letter
+    - derive/^(.*)(.)([1-6])$/$1$2$2/
+
+    # abbreviation
+    - abbrev/^([a-z]w?).*$/$1/
+    - abbrev/^([a-z]w?).*([1-6])$/$1$2/
+
+    # tone
+    - xform 1 x
+    - xform 2 r
+    - xform/3//
+    - xform 4 j
+    - xform 5 r
+    - xform 6 j
+
+    # gw kw
+    - xform/([kg])w/$1$1/
+
+  "translator/comment_format": Null
+
+  # ----
+
+  "engine/segmentors":
+    - ascii_segmentor
+    - matcher
+    - affix_segmentor@pinyin
+    - affix_segmentor@stroke
+    - affix_segmentor@liangfen
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+
+  "engine/translators/+":
+    - table_translator@liangfen
+
+  reverse_lookup:
+    tags: [ pinyin, stroke, liangfen ]
+    dictionary: jyut6ping3
+
+  liangfen:
+    tag: liangfen
+    dictionary: liangfen
+    prism: liangfen
+    prefix: "L"
+    suffix: "'"
+
+  "recognizer/patterns/liangfen": "L[a-z]*'?$"
