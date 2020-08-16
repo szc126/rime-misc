@@ -1,0 +1,65 @@
+patch:
+  "speller/algebra":
+    - xform ng q
+    - xform j Y
+    - xform yu y
+    - xform oe r
+    - xform eoi ue
+    - xform eo u
+    - xform aa A
+    - xform a v
+    - xlit YA ya
+
+    # wildcard tone
+    - 'derive/[1-6]/""/'
+
+    # abbreviation
+    - abbrev/^([a-z]w?).*$/$1/
+    - abbrev/^([a-z]w?).*([1-6])$/$1$2/
+
+    # tone
+    - 'xform 1 "'
+    - xform 2 ~
+    - xform/3//
+    - xform 4 @
+    - xform 5 ~
+    - xform 6 @
+
+    # gw kw
+    - xform/([kg])w/$1$1/
+
+    # ----
+
+    - fuzz a 2
+    - fuzz b 2
+    - fuzz c 2
+    - fuzz d 3
+    - fuzz e 3
+    - fuzz f 3
+    - fuzz g 4
+    - fuzz h 4
+    - fuzz i 4
+    - fuzz j 5
+    - fuzz k 5
+    - fuzz l 5
+    - fuzz m 6
+    - fuzz n 6
+    - fuzz o 6
+    - fuzz p 7
+    - fuzz q 7
+    - fuzz r 7
+    - fuzz s 7
+    - fuzz t 8
+    - fuzz u 8
+    - fuzz v 8
+    - fuzz w 9
+    - fuzz x 9
+    - fuzz y 9
+    - fuzz z 9
+
+  "translator/comment_format": Null
+  "translator/preedit_format":
+    - 'xform "" ?'
+    - xform @ j
+    - xform ~ r
+    - 'xform " x'
