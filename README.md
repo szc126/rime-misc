@@ -40,16 +40,13 @@
     * [`stroke.schema.yaml`](https://github.com/rime/rime-stroke)
 
 ### `dictgen_9key_stroke` （9鍵反查用）五筆畫
-* description:
-  * You must deploy this schema and create `dictgen_9key_stroke.prism.bin`.
 * depends:
   * dictionary:
     * [`stroke.dict.yaml`](https://github.com/rime/rime-stroke)
+* description:
+  * You must deploy this schema and create `dictgen_9key_stroke.prism.bin`.
 
 ### `yytpiq` 三橛粵拼
-* description:
-  * personal schema
-  * why do i have to give things names
 * depends:
   * dictionary:
     * [`jyut6ping3.dict.yaml`](https://github.com/rime/rime-cantonese)
@@ -57,6 +54,9 @@
   * reverse lookup:
     * [`terra_pinyin.schema.yaml`](https://github.com/rime/rime-terra-pinyin)
     * [`stroke.schema.yaml`](https://github.com/rime/rime-stroke)
+* description:
+  * personal schema
+  * why do i have to give things names
 
 ## TRIME keyboards
 * depends:
