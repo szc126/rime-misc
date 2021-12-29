@@ -14,13 +14,13 @@ patch:
     - derive/^(.*)(.)([1-6])$/$1$2$2/
 
     # abbreviation
-	# initial
-	# initial + tone
+    # initial
+    # initial + tone
     - abbrev/^([a-z]w?).*$/$1/
     - abbrev/^([a-z]w?).*([1-6])$/$1$2/
 
     # curses! the word i wanted didn't come up
-	# intiial + tone + final
+    # intiial + tone + final
     - abbrev/^([a-z]w?)(.*)([1-6])$/$1$3$2/
 
     # tone
