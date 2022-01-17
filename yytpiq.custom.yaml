@@ -50,6 +50,7 @@ patch:
 
   "engine/translators/+":
     - table_translator@liangfen
+    - table_translator@custom_phrase
 
   reverse_lookup:
     tags: [ pinyin, stroke, liangfen ]
@@ -63,3 +64,11 @@ patch:
     suffix: "'"
 
   "recognizer/patterns/liangfen": "L[a-z]*'?$"
+
+  custom_phrase:
+    dictionary: ""
+    user_dict: "~dict.custom.yytpiq"
+    db_class: stabledb
+    enable_completion: false
+    enable_sentence: false
+    initial_quality: 1
