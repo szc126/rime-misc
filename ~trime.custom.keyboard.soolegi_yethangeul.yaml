@@ -1,0 +1,33 @@
+"preset_keyboards/soolegi_yethangeul":
+  name: ""
+  version: "1"
+  ascii_mode: 0
+  width: 16.66
+  height: 50 # what is this based on again?
+  keys:
+  - {click: "g", label: "ㄱ", long_click: "k"}
+  - {click: "q", label: "ㅇ", long_click: "0"}
+  - {click: "d", label: "ㄷ", long_click: "t"}
+  - {click: "n", label: "ㄴ", long_click: "f"}
+  - {click: "y", label: "ㅡ", long_click: "v", swipe_right: "yi"}
+  - {click: "i", label: "ㅣ", long_click: "j"}
+
+  - {click: "b", label: "ㅂ", long_click: "p"}
+  - {click: "m", label: "ㅁ", long_click: "w"}
+  - {click: "z", label: "ㅈ", long_click: "c"}
+  - {click: "s", label: "ㅅ", long_click: "r"}
+  - {click: "o", label: "ㅗ", long_click: "jo", swipe_right: "oi", swipe_left: "joi"}
+  - {click: "a", label: "ㅏ", long_click: "ja", swipe_right: "ai", swipe_left: "jai"}
+
+  - {click: "h", label: "ㅎ", long_click: "x", swipe_left: "~"}
+  - {click: "l", label: "ㄹ", long_click: "`"}
+  - {click: ";", label: "ᆞ", long_click: "'", swipe_right: ";i"}
+  - {click: BackSpace}
+  - {click: "u", label: "ㅜ", long_click: "ju", swipe_right: "ui", swipe_left: "jui"}
+  - {click: "e", label: "ㅓ", long_click: "je", swipe_right: "ei", swipe_left: "jei"}
+
+  - {click: Mode_switch, long_click: Menu}
+  - {click: Keyboard_symbols, long_click: Keyboard_number}
+  - {click: ",", long_click: "?", swipe_right: "\\"}
+  - {click: space, long_click: "Return", swipe_left: Left, swipe_right: Right, width: 33.33}
+  - {click: ".", long_click: "!", swipe_left: "^"}
