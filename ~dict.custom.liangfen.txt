@@ -1,0 +1,21 @@
+# Rime table
+# coding: utf-8
+#@/db_name  ~dict.custom.liangfen.txt
+#@/db_type	tabledb
+#
+# no comment
+
+⿰	xqw
+⿱	xqa
+⿲	xqwe
+⿳	xqaz
+⿴	xss
+⿵	xws
+⿶	xsx
+⿷	xas
+⿸	xqs
+⿹	xes
+⿺	xsz
+⿻	xqc
+〾	x
+〓	xx
