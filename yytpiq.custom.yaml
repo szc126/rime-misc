@@ -38,6 +38,9 @@ patch:
     # gw kw
     - xform/([kg])w/$1$1/
 
+    # fuzzy
+    - derive/ai/ia/
+
   "translator/comment_format": Null
 
   # ----
