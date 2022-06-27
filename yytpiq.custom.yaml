@@ -1,5 +1,9 @@
 patch:
   "speller/algebra":
+    # erase
+    - erase/^(oe|oek|oet|in)[0-9]$/
+
+    #
     - xform ng q
     - xform j Y
     - xform yu y
