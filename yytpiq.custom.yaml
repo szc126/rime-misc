@@ -40,6 +40,8 @@ patch:
 
     # fuzzy
     - derive/ai/ia/
+    - derive/ue/uu/
+    - derive/(.)([xrj])$/$2$1/
 
   "translator/comment_format": Null
 
