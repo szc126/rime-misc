@@ -5,7 +5,7 @@
 name: jyut6ping3.custom
 version: ""
 sort: by_weight
-use_preset_vocabulary: true
+vocabulary: essay-cantonese
 import_tables:
   - jyut6ping3.chars
   - jyut6ping3.words
