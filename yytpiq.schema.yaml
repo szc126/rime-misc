@@ -15,10 +15,8 @@ switches:
     states: [ "中文", "西文" ]
   - name: full_shape
     states: [ "半角", "全角" ]
-  - name: simplification
-    states: [ "漢字", "汉字" ]
-  - name: ascii_punct
-    states: [ "。，", "．，" ]
+  - options: [ zh_hant_tw, zh_hans ]
+    states: [ "臺字", "简字" ]
 
 engine:
   processors:
@@ -44,7 +42,8 @@ engine:
     - script_translator@pinyin
     - table_translator@stroke
   filters:
-    - simplifier
+    - simplifier@zh_hans
+    - simplifier@zh_hant_tw
     - uniquifier
     - reverse_lookup_filter
 
@@ -120,3 +119,7 @@ recognizer:
   patterns:
     pinyin: "P[a-z]*'?$"
     stroke: "S[a-z]*'?$"
+
+zh_hant_tw:
+  option_name: zh_hant_tw
+  opencc_config: t2tw.json
