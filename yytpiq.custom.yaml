@@ -53,15 +53,17 @@ patch:
     - affix_segmentor@pinyin
     - affix_segmentor@stroke
     - affix_segmentor@liangfen
+    - affix_segmentor@ko
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
 
   "engine/translators/+":
     - table_translator@liangfen
+    - script_translator@ko
 
   reverse_lookup:
-    tags: [ pinyin, stroke, liangfen ]
+    tags: [ pinyin, stroke, liangfen, ko ]
     dictionary: jyut6ping3
 
   liangfen:
@@ -71,7 +73,15 @@ patch:
     prefix: "L"
     suffix: "'"
 
+  ko:
+    tag: ko
+    dictionary: slg_hangugeo
+    prism: soolegi_hangugeo
+    prefix: "K"
+    suffix: "'"
+
   "recognizer/patterns/liangfen": "L[a-z]*'?$"
+  "recognizer/patterns/ko": "K[a-z]*'?$"
 
   # ----
 
