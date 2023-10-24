@@ -43,7 +43,7 @@ engine:
     - table_translator@stroke
   filters:
     - simplifier@zh_hans
-    - simplifier@zh_hant_tw
+    #- simplifier@zh_hant_tw
     - uniquifier
     - reverse_lookup_filter
 
