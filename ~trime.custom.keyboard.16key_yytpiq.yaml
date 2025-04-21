@@ -21,7 +21,7 @@
   - {click: Keyboard_symbols, long_click: Keyboard_number}
 
   - {click: "m", swipe_right: "e", hint: "e", long_click: "="}
-  - {click: "n", swipe_right: "r", hint: "r", long_click: ""}
+  - {click: "n", swipe_right: "r", hint: "r", long_click: "<>{Left}", swipe_left: "<", swipe_right: ">"}
   - {click: "q", swipe_right: "3", hint: "n ³", long_click: ""}
   - {click: "s", swipe_right: "6", hint: "t ⁶", long_click: ""}
   - {click: Return, long_click: CommitComment}
