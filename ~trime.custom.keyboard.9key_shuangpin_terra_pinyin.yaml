@@ -1,0 +1,65 @@
+"preset_keyboards/9key_shuangpin_terra_pinyin":
+  name: "9鍵雙拼地球拼音"
+  version: "2025-04-21"
+  ascii_mode: 0
+  width: 20
+  height: 55
+  keys:
+  - {click: '"', long_click: "{}{Left}", swipe_left: "{", swipe_right: "}"}
+  - {label: "an a ang", long_click: "ai", hint: "ao",
+      swipe_up: "ai",
+      swipe_left: "an", click: "a", swipe_right: "ang",
+      swipe_down: "ao"
+    }
+  - {label: "z(ji) c(qi) s(xi)", long_click: "zh ch sh", hint: "r",
+      swipe_up: "ch",
+      swipe_left: "z", click: "c", swipe_right: "s",
+      swipe_down: "rh"
+    }
+  - {label: "en o(e) eng", long_click: "ei", hint: "ou",
+      swipe_up: "ei",
+      swipe_left: "en", click: "o", swipe_right: "eng",
+      swipe_down: "ou"
+    }
+  - {click: BackSpace}
+
+  - {click: "~", long_click: "[]{Left}", swipe_left: "[", swipe_right: "]"}
+  - {label: "t d l", long_click: "n", hint: "2",
+      swipe_up: "n",
+      swipe_left: "t", click: "d", swipe_right: "l",
+      swipe_down: "2"
+    }
+  - {label: "p b f", long_click: "m", hint: "3",
+      swipe_up: "m",
+      swipe_left: "p", click: "b", swipe_right: "f",
+      swipe_down: "3"
+    }
+  - {label: "k g h", long_click: "-r", hint: "4",
+      swipe_up: "r",
+      swipe_left: "k", click: "g", swipe_right: "h",
+      swipe_down: "4"
+    }
+  - {click: Keyboard_symbols, long_click: Keyboard_number}
+
+  - {click: "@", long_click: "<>{Left}", swipe_left: "<", swipe_right: ">"}
+  - {label: "un u(u-) ong", long_click: "ui", hint: "uo",
+      swipe_up: "ui",
+      swipe_left: "un", click: "u", swipe_right: "ong",
+      swipe_down: "uo"
+    }
+  - {label: "in i(i-) ing", long_click: "ie", hint: "iu",
+      swipe_up: "ie",
+      swipe_left: "in", click: "i", swipe_right: "ing",
+      swipe_down: "iu"
+    }
+  - {label: "vn v(v-) iong", long_click: "ve", hint: "ê",
+      swipe_up: "ve",
+      swipe_left: "vn", click: "v", swipe_right: "iong",
+      swipe_down: "eh"
+    }
+  - {click: Return, long_click: CommitComment}
+
+  - {click: Menu, long_click: Menu}
+  - {click: ",", long_click: "?", swipe_right: "\\"}
+  - {click: space, long_click: "`", swipe_left: Left, swipe_right: Right, width: 40}
+  - {click: ".", long_click: "!", swipe_left: "^"}
