@@ -1,0 +1,232 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: "tatarvtele"
+  name: "Tatarv tele"
+  version: "2025.11.27"
+
+engine:
+  processors:
+    - key_binder
+    - speller
+    - punctuator
+    - express_editor
+    #- fluency_editor
+  segmentors:
+    - abc_segmentor
+    - punct_segmentor
+  translators:
+    - echo_translator
+    - punct_translator
+    - script_translator
+
+speller:
+  alphabet: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`1234567890-=[]\\;',./~!@#$%^&*()_+{}|:\"<>?"
+
+translator:
+  dictionary: dummy
+  enable_user_dict: false
+  preedit_format:
+    - xform/ //
+
+    #- xform/^ya([s])/я$1ь/
+
+    # --- upper
+
+    - xform/^E(?=[^VJvj]*[Vv])/Ы/
+    - xform/^E/Э/
+
+    - xform/Z[Hh]/Ж/
+    - xform/T[Ss][Ss]/Ц/
+    - xform/S[Cc][Hh][Hh]/Щ/
+    - xform/A[Aa]/А/
+
+    #- xform/q([aeiou])/к\1v/
+    - xform/QA/КА/
+    - xform/QE/КЫ/
+    - xform/QI/КЫЙ/
+    - xform/QO/КО/
+    - xform/QU/КУ/
+    - xform/Qa/Ка/
+    - xform/Qe/Кы/
+    - xform/Qi/Кый/
+    - xform/Qo/Ко/
+    - xform/Qu/Ку/
+
+    #- xform/gh([aeiou])/г\1v/
+    - xform/GHA/ГА/
+    - xform/GHE/ГЫ/
+    - xform/GHI/ГЫЙ/
+    - xform/GHO/ГО/
+    - xform/GHU/ГУ/
+    - xform/G[Hh]a/Га/
+    - xform/G[Hh]e/Гы/
+    - xform/G[Hh]i/Гый/
+    - xform/G[Hh]o/Го/
+    - xform/G[Hh]u/Гу/
+
+    - xform/C[Hh]/Ч/
+    - xform/S[Hh]/Ш/
+    - xform/N[Gg]/Ң/
+    - xform/G[Hh]/ГЪ/
+    - xform/Q/КЪ/
+    - xform/V[Vv]/Ъ/
+    - xform/J[Jj]/Ь/
+    - xform/(?<=[AaEeIiOoUu])"/Э/
+    - xform/"//
+
+    - xform/B/Б/
+    - xform/W/В/
+    - xform/G/Г/
+    - xform/D/Д/
+    #- xform/J/Ж/
+    - xform/Z/З/
+    - xform/K/К/
+    - xform/L/Л/
+    - xform/M/М/
+    - xform/N/Н/
+    - xform/P/П/
+    - xform/R/Р/
+    - xform/S/С/
+    - xform/T/Т/
+    - xform/F/Ф/
+    - xform/X/Х/
+    - xform/C/Җ/
+    - xform/H/Һ/
+
+    - xform/YO(?=[^VJvj]*[Vv])/ЙО/
+    - xform/Yo(?=[^VJvj]*[Vv])/Йо/
+
+    - xform/Y[Aa]/Я/
+    - xform/Y[Ee]/Е/
+    - xform/YO/ЙӨ/
+    - xform/Yo/Йө/
+    - xform/Y[Uu]/Ю/
+
+    - xform/Y/Й/
+
+    - xform/I(?=[^VJvj]*[Vv][Jj])/И/
+
+    - xform/A(?=[^VJvj]*[Vv])/А/
+    - xform/E(?=[^VJvj]*[Vv])/Ы/
+    - xform/I(?=[^VJvj]*[Vv])/ЫЙ/
+    - xform/O(?=[^VJvj]*[Vv])/О/
+    - xform/U(?=[^VJvj]*[Vv])/У/
+
+    - xform/A(?=[^VJvj]*[Jj])/Ә/
+    - xform/E(?=[^VJvj]*[Jj])/Е/
+    - xform/I(?=[^VJvj]*[Jj])/И/
+    - xform/O(?=[^VJvj]*[Jj])/Ө/
+    - xform/U(?=[^VJvj]*[Jj])/Ү/
+
+    - xform/A/Ә/
+    - xform/E/Е/
+    - xform/I/И/
+    - xform/O/Ө/
+    - xform/U/Ү/
+
+    # --- lower
+
+    - xform/^e(?=[^VJvj]*[Vv])/ы/
+    - xform/^e/э/
+
+    - xform/zh/ж/
+    - xform/tss/ц/
+    - xform/schh/щ/
+    - xform/aa/а/ # `mingaa` `maateriaal`
+
+    #- xform/q([aeiou])/к\1v/
+    - xform/qa/ка/
+    - xform/qe/кы/
+    - xform/qi/кый/
+    - xform/qo/ко/
+    - xform/qu/ку/
+
+    #- xform/gh([aeiou])/г\1v/
+    - xform/gha/га/
+    - xform/ghe/гы/
+    - xform/ghi/гый/
+    - xform/gho/го/
+    - xform/ghu/гу/
+
+    - xform/ch/ч/
+    - xform/sh/ш/
+    - xform/ng/ң/
+    - xform/gh/гъ/
+    - xform/q/къ/
+    - xform/vv/ъ/
+    - xform/jj/ь/
+    - xform/(?<=[aeiou])'/э/
+    - xform/'// # `bashlan'gan`
+
+    - xform/b/б/
+    - xform/w/в/
+    - xform/g/г/
+    - xform/d/д/
+    #- xform/j/ж/ # in this house we speak ill of the turkish latin alphabet's ç/c/j
+    - xform/z/з/
+    - xform/k/к/
+    - xform/l/л/
+    - xform/m/м/
+    - xform/n/н/
+    - xform/p/п/
+    - xform/r/р/
+    - xform/s/с/
+    - xform/t/т/
+    - xform/f/ф/
+    - xform/x/х/
+    - xform/c/җ/
+    - xform/h/һ/
+
+    - xform/yo(?=[^VJvj]*[Vv])/йо/
+
+    - xform/ya/я/
+    - xform/ye/е/
+    - xform/yo/йө/
+    - xform/yu/ю/
+
+    - xform/y/й/
+
+    - xform/i(?=[^VJvj]*[Vv][Jj])/и/ # `mingavj` `matyerialvj` `tarixevj`
+
+    - xform/a(?=[^VJvj]*[Vv])/а/
+    - xform/e(?=[^VJvj]*[Vv])/ы/
+    - xform/i(?=[^VJvj]*[Vv])/ый/
+    - xform/o(?=[^VJvj]*[Vv])/о/
+    - xform/u(?=[^VJvj]*[Vv])/у/
+
+    - xform/a(?=[^VJvj]*[Jj])/ә/
+    - xform/e(?=[^VJvj]*[Jj])/е/
+    - xform/i(?=[^VJvj]*[Jj])/и/
+    - xform/o(?=[^VJvj]*[Jj])/ө/
+    - xform/u(?=[^VJvj]*[Jj])/ү/
+
+    - xform/a/ә/
+    - xform/e/е/
+    - xform/i/и/
+    - xform/o/ө/
+    - xform/u/ү/
+
+    # --- end
+
+    - xform/V//
+    - xform/J//
+    - xform/v//
+    - xform/j//
+
+    - xform/</«/
+    - xform/>/»/
+
+    - xform/$/ /
+
+punctuator:
+  #import_preset: default
+
+key_binder:
+  #import_preset: default
+  bindings:
+    - { when: has_menu, accept: "space", send: "Shift+Return" }
+    - { when: has_menu, accept: "Return", send: "Shift+Return" }
+    - { when: has_menu, accept: "Shift+space", send: "Shift+Return" }
+    #- { when: has_menu, accept: "period", send: "{period}{Shift+Return}" }
