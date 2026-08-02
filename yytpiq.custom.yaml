@@ -1,7 +1,7 @@
 patch:
   "speller/algebra":
     # erase
-    - erase/^(oe|oek|oet|in)[0-9]$/
+    - erase/^(a|oe|oek|oet|in|doe)[0-9]$/
 
     #
     - xform ng q
